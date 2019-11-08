@@ -4,6 +4,10 @@ font-family: 'Lora', serif;
 font-family: 'Ubuntu', sans-serif;
 */
 
+/* =================
+Global
+================= */
+
 body {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
@@ -90,7 +94,9 @@ strong {
 
 .article-image.featured {
     max-height: 308px;
+    object-fit: cover;
     object-position: center bottom;
+    width: 100%; /* override max-width: 100%; in Global settings */
 }
 .article-image.featured.about-me {
     object-position: center -20px;
