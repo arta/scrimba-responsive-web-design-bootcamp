@@ -1,0 +1,67 @@
+/*  Fonts
+    -----
+    font-family: 'Lora', serif;
+    font-family: 'Ubuntu', sans-serif;
+*/
+
+/* Global */
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    align-items: center;
+    background: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    padding: 4em 1em;
+} 
+
+/* Typography */
+h2, 
+p { 
+    margin-top: 0; 
+}
+
+.title {
+    color: #143774;
+    font-family: 'Lora', serif;
+    font-size: 3.375rem;
+    margin-bottom: .6rem;
+}
+
+.nav,
+.subtitle {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav {
+    color: #707070;
+    text-decoration: none;
+}
+.nav:hover {
+    text-decoration: underline;
+}
+
+.subtitle {
+    color: #1792d2;
+    letter-spacing: .35rem;
+}
+
+/* Layout */
+.identity {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 1.2em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
