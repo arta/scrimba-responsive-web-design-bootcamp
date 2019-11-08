@@ -1,0 +1,246 @@
+/* =================
+Global
+================= */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html { 
+    color: #707070;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px; /* For rem to work properly?! TODO: investigage */
+    font-weight: 300;
+}
+
+/* * { border: 1px dotted black; } */
+
+/* =================
+Typography
+================= */
+
+h1, 
+h2, 
+h3, 
+p { margin-top: 0; }
+
+h1,
+h2,
+h3 {
+    color: #143774;
+    font-family: 'Lora', serif;
+}
+
+h2,
+h3,
+p { line-height: 1.5; }
+
+h1 {
+    font-weight: 400;
+    color: #143774;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: .02rem;
+}
+.h2-article-featured { order: 1; }
+.h2-article { margin-top: -.3em; }
+.h2-widget {
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 1rem;
+   letter-spacing: .2rem;
+   text-transform: uppercase;
+}
+
+h3 { 
+    font-size: 1rem; 
+    font-weight: 300;
+}
+
+p { letter-spacing: .02rem; }
+.p-article { order: 1; }
+.p-article-info,
+.p-footer { color: #93A3BF; }
+.p-article-info {
+    font-size: .8em; 
+    order: -1;
+}
+.p-subtitle {
+    color: #1792d2;
+    font-size: .67rem;
+    font-weight: 700;
+    letter-spacing: .12rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+.p-widget { 
+    color: #143774;
+    font-size: .8rem; 
+}
+
+strong { font-weight: 700; }
+
+a { color: #1792d2; }
+a:focus,
+a:hover { color: #00609b; }
+.a-article-continue {
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: .16rem;
+    margin: 1em 0 2em;
+    order: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* =================
+Layout
+================= */
+
+header {
+    background: #f8f8f8;
+    padding: 2em 0;
+}
+
+main,
+aside { margin-top: 3em; }
+
+main { 
+    flex: 0 0 70%;
+    /* flex-shrink: 10;
+    width: 70%;  */
+}
+
+aside { 
+    flex: 0 1 24%;
+    /* flex-shrink: 2;
+    width: 24%; */
+}
+
+article { display: flex; }
+.article-featured {
+    flex-direction: column;
+}
+.article-recent {
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+.article-recent-main { width: 68%; }
+.article-recent-aside { 
+    order: -1; 
+    width: 28%;
+}
+
+footer {
+    background: #143774;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-widget {
+    border: 1em solid #EBEBEB;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+.widget-post-recent {
+    display: flex;
+    flex-direction: column;
+}
+
+.h3-widget-post-recent { order: 1; }
+
+img { max-width: 100%; }
+.img-article-featured { 
+    margin-bottom: 1.4em;
+    order: -1; 
+}
+.img-article-recent {
+    height: 242px;
+    margin-bottom: .3em;
+    object-fit: cover;
+}
+.img-widget { margin-bottom: .5em; }
+
+@media (max-width: 675px) {
+        
+    header { text-align: center; }
+    .container-header { flex-direction: column; }
+    
+    .container-main {
+        flex-direction: column;
+    }
+    main,
+    aside { width: 100%; }
+    
+    article { flex-direction: column; }
+    .article-recent-main,
+    .article-recent-aside,
+    .img-article-recent { width: 100%; }
+    .article-recent-main { margin-top: -1.6em; }
+    .p-article-info.recent { text-align: right; }
+
+    .img-widget { 
+        height: 87px; 
+        object-fit: cover;
+        width: 100%; /* for about-me.jpg, not in widget-post-recent */
+    }
+}
+
+/* navigation */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li { margin-left: 2em; }
+
+nav a {
+    color: #707070;
+    font-size: .9rem;
+    font-weight: 700;
+    padding: .25em 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover,
+nav a:focus { color: #1792d2; }
+
+.current-page { border-bottom: 1px solid #707070; }
+
+.current-page:hover { color: #707070; }
+
+@media (max-width: 675px) {
+    
+    nav ul { flex-direction: column; }
+    
+    nav li { margin: .5em 0; }
+}
