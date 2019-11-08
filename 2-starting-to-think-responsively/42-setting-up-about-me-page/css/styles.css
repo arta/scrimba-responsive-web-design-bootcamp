@@ -20,7 +20,7 @@ img {
     display: block;
 }
 
-/* * { border: 1px dotted black; } */
+* { border: 1px dotted black; }
 
 /* =================
 Typography
@@ -148,10 +148,10 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
-nav li { margin-left: 2em; }
+nav li { margin: .5em 0; }
 
 nav a {
     text-decoration: none;
@@ -167,10 +167,10 @@ nav a:focus { color: #1792d2; }
 
 .current-page:hover { color: #707070; }
 
-@media (max-width: 675px) {
-    nav ul { flex-direction: column; }
+@media (min-width: 675px) {
+    nav ul { flex-direction: row; }
     
-    nav li { margin: .5em 0; }
+    nav li { margin: 0 0 0 2em; }
 }
 
 /* articles */
