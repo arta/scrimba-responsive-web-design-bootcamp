@@ -130,6 +130,10 @@ article {
     flex-direction: column;
 }
 .article-featured { flex-direction: column; }
+.article-featured.home {
+    border-bottom: 1px solid #707070;
+    margin-bottom: 2em;
+}
 .p-article-info.recent { text-align: left; }
 .article-recent__aside { order: -1; }
 
@@ -161,6 +165,12 @@ footer {
 .widget-post-recent {
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid #b8b8b8;
+    margin-bottom: 1.3em;
+}
+.widget-post-recent:last-child {
+    border: 0;
+    margin-bottom: 0;
 }
 
 .img-article-featured { 
