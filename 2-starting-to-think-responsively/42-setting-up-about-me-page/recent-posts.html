@@ -8,7 +8,7 @@
 
     <body>
         <header>
-            <div class="container container-header">
+            <div class="container container-flex">
                 <div class="site-title">
                     <h1>Living the simple life</h1>
                     <p class="p-subtitle">A blog exploring minimalism in life</p>
@@ -16,117 +16,102 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about-me.html">About me</a></li>
+                        <li><a href="#">About me</a></li>
                         <li><a href="#" class="current-page">Recent posts</a></li>
                     </ul>
                 </nav>
-            </div> <!-- container container-header -->
+            </div> <!-- container container-flex -->
         </header>
 
-        <div class="container container-main-aside">
-            <main>
-                <article class="article-recent first">
-                    <div class="article-recent__left">
-                        <img src="img/life.jpg" alt="desk with plant and lamp in front of wall with clock"
-                            class="img-recent">
-                        <p class="p-date-comments-count">July 23, 2019 | 3 comments</p>
-                    </div> <!-- article-recent__left -->
-                    <div class="article-recent__right">
-                        <h2>Finding simplicity in life</h2>
+        <div class="container container-flex">
+            <main role="main">
+                <article class="article-recent">
+                    <div class="article-recent__main">
+                        <h2 class="h2-article">Finding simplicity in life</h2>
                         <p>Life can get complicated really quickly, but it doesn't have to be! There are many ways to
                             simplify your life, a few of which we've explored in the past. This week we're taking a bit
                             of a approach though, in how you can find simplicity in the life you already living.</p>
-                        <p><a href="#" class="a-continue-reading">continue reading</a></p>
-                    </div> <!-- article-recent__right -->
+                        <p><a href="#" class="a-article-continue">continue reading</a></p>
+                    </div> <!-- article-recent__main -->
+                    <div class="article-recent__aside">
+                        <img src="img/life.jpg" alt="desk with plant and lamp in front of wall with clock" class="img-article-recent">
+                        <p class="p-article-info recent">July 23, 2019 | 3 comments</p>
+                    </div> <!-- article-recent__aside -->
                 </article>
 
                 <article class="article-recent">
-                    <div class="article-recent__left">
-                        <img src="img/food.jpg" alt="bamboo plate with chinese dumplings and sticks" class="img-recent">
-                        <p class="p-date-comments-count past">July 19, 2019 | 3 comments</p>
-                    </div> <!-- article-recent__left -->
-                    <div class="article-recent__right">
-                        <h2>Keeping cooking simple</h2>
+                    <div class="article-recent__main">
+                        <h2 class="h2-article">Keeping cooking simple</h2>
                         <p>Food is a very important part of everyone's life. If you want to be healthy, you have to eat
                             healthy. One of the easiest ways to do that is to keep your cooking nice and simple.</p>
-                        <p><a href="#" class="a-continue-reading">continue reading</a></p>
-                    </div> <!-- article-recent__right -->
+                        <p><a href="#" class="a-article-continue">continue reading</a></p>
+                    </div> <!-- article-recent__main -->
+                    <div class="article-recent__aside">
+                        <img src="img/food.jpg" alt="bamboo plate with chinese dumplings and sticks" class="img-article-recent">
+                        <p class="p-article-info recent">July 19, 2019 | 3 comments</p>
+                    </div> <!-- article-recent__aside -->
                 </article>
 
                 <article class="article-recent">
-                    <div class="article-recent__left">
-                        <img src="img/work.jpg" alt="chair and desk with vases and picture frame"
-                            class="img-recent img-focus-bottom">
-                        <p class="p-date-comments-count past">July 12, 2019 | 3 comments</p>
-                    </div> <!-- article-recent__left -->
-                    <div class="article-recent__right">
-                        <h2>Simplicity and work</h2>
+                    <div class="article-recent__main">
+                        <h2 class="h2-article">Simplicity and work</h2>
                         <p>Work is often a major source of stress. People get frustrated, it ruins their relationship
                             with others and it leads to burnout. By keeping your work life as simple as possible, it
                             will help balance everything out.</p>
-                        <p><a href="#" class="a-continue-reading">continue reading</a></p>
-                    </div> <!-- article-recent__right -->
+                        <p><a href="#" class="a-article-continue">continue reading</a></p>
+                    </div> <!-- article-recent__main -->
+                    <div class="article-recent__aside">
+                        <img src="img/work.jpg" alt="chair and desk with vases and picture frame" class="img-article-recent img-focus-bottom">
+                        <p class="p-article-info recent">July 12, 2019 | 3 comments</p>
+                    </div> <!-- article-recent__aside -->
                 </article>
 
                 <article class="article-recent">
-                    <div class="article-recent__left">
-                        <img src="img/deco.jpg" alt="glass vase with water and two green leaves" class="img-recent">
-                        <p class="p-date-comments-count past">July 3, 2019 | 3 comments</p>
-                    </div> <!-- article-recent__left -->
-                    <div class="article-recent__right">
-                        <h2>Simple decorations</h2>
+                    <div class="article-recent__main">
+                        <h2 class="h2-article">Simple decorations</h2>
                         <p>A home isn't a home until you've decorated a little. People either don't decorate, or they go
                             overboard and it doesn't have the impact they were hoping for. Staying simple will help draw
                             the eye where you want it to and make things pop like never before.</p>
-                        <p><a href="#" class="a-continue-reading">continue reading</a></p>
-                    </div> <!-- article-recent__right -->
+                        <p><a href="#" class="a-article-continue">continue reading</a></p>
+                    </div> <!-- article-recent__main -->
+                    <div class="article-recent__aside">
+                        <img src="img/deco.jpg" alt="glass vase with water and two green leaves" class="img-article-recent">
+                        <p class="p-article-info recent">July 3, 2019 | 3 comments</p>
+                    </div> <!-- article-recent__aside -->
                 </article>
             </main>
 
-            <aside>
-                <div class="sidebar">
-                    <h2 class="h2-side">About me</h2>
+            <aside class="aside-sidebar">
+                <div class="sidebar-widget">
+                    <h2 class="h2-widget">About me</h2>
+                    <img src="img/about-me.jpg" alt="my-portrait" class="img-widget">
+                    <p class="p-widget">I find life better, and I'm happier, when things are nice and simple.</p>
+                </div> <!-- sidebar-widget -->
 
-                    <article class="article-side feature">
-                        <img src="img/about-me.jpg" alt="my-portrait" class="img-side feature">
-                        <p class="p-side">I find life better, and I'm happier, when things are nice and simple.</p>
-                    </article>
-                </div> <!-- sidebar -->
+                <div class="sidebar-widget">
+                    <h2 class="h2-widget">Recent posts</h2>
 
-                <div class="sidebar">
-                    <h2 class="h2-side">Recent posts</h2>
+                    <div class="widget-post-recent">
+                        <h3 class="h3-widget-post-recent">Keeping cooking simple</h3>
+                        <img src="img/food.jpg" alt="bamboo plate with chinese dumplings and sticks" class="img-widget">
+                    </div>
 
-                    <article class="article-side first">
-                        <img src="img/food.jpg" alt="bamboo plate with chinese dumplings and sticks" class="img-side">
-                        <h3 class="h3-side">Keeping cooking simple</h3>
-                    </article>
+                    <div class="widget-post-recent">
+                        <h3 class="h3-widget-post-recent">Simplicity and work</h3>
+                        <img src="img/work.jpg" alt="chair and desk with vases and picture frame" class="img-widget img-focus-bottom">
+                    </div>
 
-                    <hr class="hr-side">
-
-                    <article class="article-side">
-                        <img src="img/work.jpg" alt="chair and desk with vases and picture frame"
-                            class="img-side img-focus-bottom">
-                        <h3 class="h3-side">Simplicity and work</h3>
-                    </article>
-
-                    <hr class="hr-side">
-
-                    <article class="article-side last">
-                        <img src="img/deco.jpg" alt="glass vase with water and two green leaves" class="img-side">
-                        <h3 class="h3-side">Simple decorations</h3>
-                    </article>
-                </div> <!-- sidebar -->
+                    <div class="widget-post-recent">
+                        <h3 class="h3-widget-post-recent">Simple decorations</h3>
+                        <img src="img/deco.jpg" alt="glass vase with water and two green leaves" class="img-widget">
+                    </div>
+                </div> <!-- sidebar-widget -->
             </aside>
         </div> <!-- container container-main-aside -->
 
         <footer>
-            <div class="container">
-                <p class="p-footer">
-                    <strong>Living the Simple Life</strong>
-                    <br>
-                    Copyright 2019
-                </p>
-            </div> <!-- container -->
+            <p class="p-footer">Living the Simple Life</p>
+            <p class="p-footer">Copyright 2019</p>
         </footer>
     </body>
 
