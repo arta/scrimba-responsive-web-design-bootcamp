@@ -182,7 +182,7 @@ footer {
     height: 87px; 
     margin-bottom: .5em; 
     object-fit: cover;
-    /* for about-me.jpg, not in widget-post-recent */
+    /* for about-me.jpg, not in widget-post-recent (column directed flexbox) */
     width: 100%; 
 }
 
