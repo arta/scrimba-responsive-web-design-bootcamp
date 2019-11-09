@@ -67,6 +67,10 @@ h3 {
     font-size: 1rem; 
     font-weight: 300;
 }
+.h3-article {
+    color: #1792D2;
+    font-size: 1.2rem;
+}
 .h3-widget-post-recent { order: 1; }
 
 p { letter-spacing: .02rem; }
