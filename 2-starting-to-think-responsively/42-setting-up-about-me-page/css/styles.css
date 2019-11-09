@@ -174,8 +174,15 @@ footer {
 }
 
 .img-article-featured { 
+    height: 308px;
     margin-bottom: 1.4em;
+    object-fit: cover;
     order: -1; 
+    /* 
+        dev't note: 
+        width: 100%; not needed cuz parent is a column directed flexbox
+        which means the image takes 100% of parent's width by default
+    */
 }
 .img-article-recent {
     height: 242px;
