@@ -68,7 +68,7 @@ h3 { font-weight: 300; }
 .p-footer { color: #93A3BF; }
 
 .p-article-info { 
-    margin: 2em 0;
+    margin: 1.6em 0;
     order: -1; 
 }
 
@@ -161,7 +161,6 @@ footer {
 
 .img-article-featured { 
     height: 308px;
-    margin-bottom: 1.4em;
     object-fit: cover;
     order: -1; 
     /* 
@@ -170,12 +169,15 @@ footer {
         which means the image takes 100% of parent's width by default
     */
 }
+.img-article-featured.about-me { margin-bottom: 3em; }
+
 .img-article-recent {
     height: 242px;
     margin-bottom: .3em;
     object-fit: cover;
     width: 100%;
 }
+
 .img-widget { 
     height: 87px; 
     margin-bottom: .5em; 
