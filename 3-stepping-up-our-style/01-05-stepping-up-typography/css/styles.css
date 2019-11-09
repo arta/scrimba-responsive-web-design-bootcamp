@@ -9,10 +9,11 @@ Global
 ================= */
 
 body {
-    margin: 0;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.125rem;
     font-weight: 300;
+    line-height: 1.6;
+    margin: 0;
 }
 
 img {
@@ -90,7 +91,10 @@ a:focus { color: #143774; }
 .article-image.featured.about-me { object-position: center -20px; }
 
 .widget-title,
-.widget-recent-post-title { font-size: 1rem; }
+.widget-recent-post-title {
+    font-size: 1rem;
+    line-height: 1.4;
+}
 
 .widget-title {
     font-family: 'Ubuntu', sans-serif;
