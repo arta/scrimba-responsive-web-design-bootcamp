@@ -8,10 +8,10 @@ body {
     padding: 0;
 }
 
-html { 
+body { 
     color: #707070;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 18px; /* For rem to work properly?! TODO: investigage */
+    font-size: 1.125rem;
     font-weight: 300;
 }
 
@@ -36,63 +36,60 @@ h2,
 h3 {
     color: #143774;
     font-family: 'Lora', serif;
+    font-weight: 400;
 }
 
 h1 {
-    font-weight: 400;
-    color: #143774;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 0;
 }
 
-h2 {
-    font-size: 1.3rem;
-    font-weight: 300;
-}
+h2 { font-size: 1.5rem; }
+
+h3 { font-weight: 300; }
+
+.h2-widget,
+.h3-widget-post-recent { font-size: 1rem; }
+
 .h2-article-featured { order: 1; }
 .h2-article { margin-top: -.3em; }
-.h2-widget {
-   font-family: 'Ubuntu', sans-serif;
-   font-size: 1rem;
-}
+.h2-widget { font-family: 'Ubuntu', sans-serif; }
 
-h3 { 
-    font-size: 1rem; 
-    font-weight: 300;
-}
-.h3-article {
-    color: #1792D2;
-    font-size: 1.2rem;
-}
+.h3-article { color: #1792D2; }
 .h3-widget-post-recent { order: 1; }
 
+.p-article-info,
+.p-widget,
+.a-article-continue { font-size: .875rem; }
+
 .p-article { order: 1; }
+
 .p-article-info,
 .p-footer { color: #93A3BF; }
-.p-article-info {
-    font-size: .8em; 
-    order: -1;
+
+.p-article-info { 
+    margin: 2em 0;
+    order: -1; 
 }
-.p-article-info.recent { text-align: right; }
+
 .p-subtitle {
     color: #1792d2;
-    font-size: .67rem;
+    font-size: .75rem;
     font-weight: 700;
     margin: 0;
 }
-.p-widget { 
-    color: #143774;
-    font-size: .8rem; 
-}
+
+.p-widget { color: #143774; }
 
 strong { font-weight: 700; }
 
 a { color: #1792d2; }
+
 a:focus,
 a:hover { color: #00609b; }
+
 .a-article-continue {
     display: inline-block;
-    font-size: .8rem;
     font-weight: 700;
     margin: 1em 0 2em;
     order: 1;
@@ -117,12 +114,13 @@ article {
     display: flex;
     flex-direction: column;
 }
+
 .article-featured { flex-direction: column; }
 .article-featured.home {
     border-bottom: 1px solid #707070;
     margin-bottom: 2em;
 }
-.p-article-info.recent { text-align: left; }
+
 .article-recent__aside { order: -1; }
 
 footer {
@@ -228,7 +226,6 @@ nav li { margin: .5em 0; }
 
 nav a {
     color: #707070;
-    font-size: .9rem;
     font-weight: 700;
     padding: .25em 0;
     text-decoration: none;
