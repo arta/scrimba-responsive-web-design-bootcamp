@@ -54,7 +54,10 @@ h3 { font-weight: 300; }
 
 .h2-article-featured { order: 1; }
 .h2-article { margin-top: -.3em; }
-.h2-widget { font-family: 'Ubuntu', sans-serif; }
+.h2-widget {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+}
 
 .h3-article { color: #1792D2; }
 .h3-widget-post-recent {
@@ -81,6 +84,7 @@ h3 { font-weight: 300; }
     font-size: .75rem;
     font-weight: 700;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .p-widget { color: #143774; }
@@ -98,6 +102,7 @@ a:hover { color: #00609b; }
     margin: 1em 0 2em;
     order: 1;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 /* =================
@@ -232,9 +237,11 @@ nav li { margin: .5em 0; }
 
 nav a {
     color: #707070;
+    font-size: 1rem;
     font-weight: 700;
     padding: .25em 0;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 nav a:hover,
