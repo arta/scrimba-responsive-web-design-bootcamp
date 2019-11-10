@@ -72,10 +72,8 @@ h3 { font-weight: 300; }
 
 .p-article { order: 1; }
 
-.p-article-info,
-.p-footer { color: #93A3BF; }
-
 .p-article-info { 
+    color: #93A3BF;
     margin: 1.6em 0;
     order: -1; 
 }
@@ -137,6 +135,8 @@ article {
 
 footer {
     background: #143774;
+    color: rgba(255,255,255, .65);
+    /* color: #ffffff65; */
     padding: 2em 0;
     text-align: center;
 }
