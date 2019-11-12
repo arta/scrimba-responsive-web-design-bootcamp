@@ -1,3 +1,4 @@
+
 /* ====== */
 /* Global */
 /* ====== */
@@ -16,12 +17,9 @@ body {
 /* Typography */
 /* ========== */
 
-h1 {
-    color: #fff;
-    font-size: 2.25rem;
-    font-weight: 300;
-    margin: 2em 0;
-}
+h1,
+h2,
+p { margin-top: 0; }
 
 h1 + p,
 h2 + p {
@@ -35,7 +33,17 @@ h1 + p { margin: 0; }
 
 h2 + p { font-size: 1rem; }
 
-h2 { font-size: 1.3125rem; }
+h1 {
+    color: #fff;
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin: 2em 0;
+}
+
+h2 {
+    font-size: 1.3125rem;
+    margin-bottom: .2em;
+}
 
 .p-intro-top-text {
     color: #F18119;
@@ -58,7 +66,7 @@ strong { font-weight: 900; }
 /* ============= */
 
 .intro,
-.registration { padding: 2em; }
+.registration { padding: 2em 1em; }
 
 .container {
     display: flex;
@@ -74,7 +82,7 @@ strong { font-weight: 900; }
     background-size: cover;
     display: flex;
     flex-direction: column;
-    padding: 0 .25em 2em;
+    padding-top: 0;
 }
 
 @media (min-width: 590px) {
