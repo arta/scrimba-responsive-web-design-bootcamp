@@ -1,5 +1,3 @@
-
-
 /* ====== */
 /* Global */
 /* ====== */
@@ -86,7 +84,18 @@ strong { font-weight: 900; }
     padding-top: 0;
 }
 
+/* ============= */
+/* Media queries */
+/* ============= */
+
 @media (min-width: 590px) {
+    
+    body { font-size: 1.125rem; }
+
+    h2 + p { font-size: 1.75rem; }
+    
+    h1 { font-size: 3.5rem; }
+    
     .container { flex-direction: row; }
     
     .intro { width: 58%; }
