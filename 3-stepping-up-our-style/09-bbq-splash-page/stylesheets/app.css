@@ -68,8 +68,6 @@ strong { font-weight: 900; }
 .registration { padding: 2em 1em; }
 
 .container {
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
     max-width: 960px;
 }
@@ -96,7 +94,10 @@ strong { font-weight: 900; }
     
     h1 { font-size: 3.5rem; }
     
-    .container { flex-direction: row; }
+    .container { 
+        display: flex;
+        flex-direction: row; 
+    }
     
     .intro { width: 58%; }
     
