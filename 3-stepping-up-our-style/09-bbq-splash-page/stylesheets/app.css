@@ -1,4 +1,5 @@
 
+
 /* ====== */
 /* Global */
 /* ====== */
@@ -87,4 +88,8 @@ strong { font-weight: 900; }
 
 @media (min-width: 590px) {
     .container { flex-direction: row; }
+    
+    .intro { width: 58%; }
+    
+    .registration { width: 42%; }
 }
