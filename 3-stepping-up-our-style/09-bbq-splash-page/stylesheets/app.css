@@ -1,12 +1,23 @@
+/* ====== */
+/* Global */
+/* ====== */
+
 body {
     color: #404040;
     font-family: 'Source Sans Pro', sans-serif; 
     font-size: 1rem;
     margin: 0;
+    padding: 0;
     text-align: center;
 }
 
+
+/* ========== */
+/* Typography */
+/* ========== */
+
 h1 {
+    color: #fff;
     font-size: 2.25rem;
     font-weight: 300;
 }
@@ -28,6 +39,7 @@ h2 { font-size: 1.3125rem; }
     font-size: 0.625rem;
     font-weight: 900;
     letter-spacing: 1px;
+    order: -1;
     text-transform: uppercase;
 }
 
@@ -37,3 +49,31 @@ h2 { font-size: 1.3125rem; }
 }
 
 strong { font-weight: 900; }
+
+/* ============= */
+/* Intro section */
+/* ============= */
+
+.intro,
+.registration { padding: 2em; }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.intro {
+    background-color: #404040;
+    background-image: url(../images/dark-ribs.jpg); /* step up/out: ../.. !!! */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 0 .25em 1em;
+}
+
+@media (min-width: 590px) {
+    .container { flex-direction: row; }
+}
