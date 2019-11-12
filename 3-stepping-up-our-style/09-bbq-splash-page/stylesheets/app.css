@@ -1,0 +1,39 @@
+body {
+    color: #404040;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+}
+
+h1 + p,
+h2 + p {
+    color: #F18119;
+    font-size: 1.3125rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h2 + p { font-size: 1rem; }
+
+h2 { font-size: 1.3125rem; }
+
+.p-intro-top-text {
+    color: #F18119;
+    font-size: 0.625rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.p-registration-privacy {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+}
+
+strong { font-weight: 900; }
