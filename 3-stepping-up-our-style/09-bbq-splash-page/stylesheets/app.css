@@ -2,6 +2,11 @@
 /* Global */
 /* ====== */
 
+/* box-sizing reset on html doesn't work */
+/* (scrolling required) */
+/* dunno why; ok, resetting on `*` */
+* { box-sizing: border-box; }
+
 body {
     color: #404040;
     font-family: 'Source Sans Pro', sans-serif; 
