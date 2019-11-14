@@ -99,7 +99,6 @@ strong { font-weight: 900; }
         flex-direction: row; 
     }
     
-    .intro { width: 58%; }
-    
-    .registration { width: 42%; }
+    .intro,    
+    .registration { width: 50%; }
 }
