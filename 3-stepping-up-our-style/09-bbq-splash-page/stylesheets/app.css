@@ -100,5 +100,8 @@ strong { font-weight: 900; }
     }
     
     .intro,    
-    .registration { width: 50%; }
+    .registration {
+        min-height: 100vh;
+        width: 50%; 
+    }
 }
