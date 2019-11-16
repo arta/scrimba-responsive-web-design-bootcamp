@@ -65,16 +65,18 @@ h2 {
 
 strong { font-weight: 900; }
 
-/* ============= */
-/* Intro section */
-/* ============= */
+/* ====== */
+/* Layout */
+/* ====== */
 
 .intro,
 .registration { padding: 2em 1em; }
 
-.container {
-    margin: 0 auto;
-    max-width: 960px;
+.intro > *,
+.registration > * {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
 }
 
 .intro {
@@ -98,19 +100,16 @@ strong { font-weight: 900; }
     body { font-size: 1.125rem; }
 
     h2 + p { font-size: 1.75rem; }
-    
+
     h1 { font-size: 3.5rem; }
-    
-    .container { 
-        display: flex;
-        flex-direction: row; 
+
+    main { 
+        display: flex; 
+        min-height: 100vh; 
     }
-    
-    .intro,    
-    .registration {
-        min-height: 100vh;
-        width: 50%; 
-    }
+
+    .intro,
+    .registration { width: 50%; }
 
     .registration {
         display: flex;
@@ -118,3 +117,4 @@ strong { font-weight: 900; }
         justify-content: center;
     }
 }
+
