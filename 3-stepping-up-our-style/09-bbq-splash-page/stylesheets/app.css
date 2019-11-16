@@ -99,8 +99,16 @@ strong { font-weight: 900; }
 input,
 button {
     margin-bottom: .75em;
-    text-align: center;
+    text-align: inherit;
     width: 100%;
+}
+
+input {
+    border: 1px solid #404040;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+    padding: .25em;
 }
 
 .form-email-collector {
