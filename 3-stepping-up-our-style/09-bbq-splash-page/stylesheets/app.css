@@ -69,10 +69,10 @@ strong { font-weight: 900; }
 /* Layout */
 /* ====== */
 
-.intro,
-.registration { padding: 2em 1em; }
+.sect-intro,
+.sect-registration { padding: 2em 1em; }
 
-.intro {
+.sect-intro {
     background-color: #404040;
     background-image: url(../images/dark-ribs.jpg); /* step up/out: ../.. !!! */
     background-position: center;
@@ -114,8 +114,8 @@ strong { font-weight: 900; }
         min-height: 100vh; 
     }
 
-    .intro,
-    .registration {
+    .sect-intro,
+    .sect-registration {
         /* stretch children - now flex-items - vertically */
         /* via flex-items' default `align-self: stretch;` */
         /* replaces declaring 100% height on container's children */
@@ -123,7 +123,7 @@ strong { font-weight: 900; }
         width: 50%; 
     }
 
-    .registration {
+    .sect-registration {
         flex-direction: column;
         justify-content: center;
     }
