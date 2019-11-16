@@ -72,23 +72,24 @@ strong { font-weight: 900; }
 .intro,
 .registration { padding: 2em 1em; }
 
-.intro > *,
-.registration > * {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 400px;
-}
-
 .intro {
     background-color: #404040;
     background-image: url(../images/dark-ribs.jpg); /* step up/out: ../.. !!! */
     background-position: center;
     background-size: cover;
+    padding-top: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.container-intro {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 50vh;
-    padding-top: 0;
 }
 
 /* ============= */
@@ -116,5 +117,11 @@ strong { font-weight: 900; }
         flex-direction: column;
         justify-content: center;
     }
-}
 
+    /* Rare situation where 100% height works
+        Gotcha:
+        works only if:
+            a) .parent { height: X; } <= Gotcha: NOT { min-height: X; }
+            b) .parent a stretched flex-item */
+    .container-intro { height: 100%; }
+}
