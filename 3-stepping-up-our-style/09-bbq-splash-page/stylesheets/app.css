@@ -98,6 +98,7 @@ strong { font-weight: 900; }
 
 input,
 button {
+    border-radius: 5px;
     margin-bottom: .75em;
     text-align: inherit;
     width: 100%;
@@ -105,7 +106,6 @@ button {
 
 input {
     border: 1px solid #404040;
-    border-radius: 5px;
     font-family: inherit;
     font-size: inherit;
     padding: .25em;
@@ -114,6 +114,21 @@ input {
 .form-email-collector {
     width: 80%;
     margin: 0 auto .5em;
+}
+
+.btn {
+    border: 0;
+    cursor: pointer;
+    font-size: .625em;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-image: linear-gradient(90deg, #ffa51d, #ff713b);
+    color: white;
 }
 
 /* ============= */
