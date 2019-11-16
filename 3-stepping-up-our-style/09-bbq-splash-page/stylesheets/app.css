@@ -97,12 +97,17 @@ strong { font-weight: 900; }
 /* ============= */
 
 @media (min-width: 590px) {
+    /* ========================= */
     
     body { font-size: 1.125rem; }
+
+    /* ========================= */
 
     h2 + p { font-size: 1.75rem; }
 
     h1 { font-size: 3.5rem; }
+
+    /* ========================= */
 
     main { 
         display: flex; 
@@ -110,18 +115,16 @@ strong { font-weight: 900; }
     }
 
     .intro,
-    .registration { width: 50%; }
+    .registration {
+        /* stretch children - now flex-items - vertically */
+        /* via flex-items' default `align-self: stretch;` */
+        /* replaces declaring 100% height on container's children */
+        display: flex;
+        width: 50%; 
+    }
 
     .registration {
-        display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
-    /* Rare situation where 100% height works
-        Gotcha:
-        works only if:
-            a) .parent { height: X; } <= Gotcha: NOT { min-height: X; }
-            b) .parent a stretched flex-item */
-    .container-intro { height: 100%; }
 }
