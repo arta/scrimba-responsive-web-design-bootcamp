@@ -92,6 +92,22 @@ strong { font-weight: 900; }
     min-height: 50vh;
 }
 
+/* ==== */
+/* Form */
+/* ==== */
+
+input,
+button {
+    margin-bottom: .75em;
+    text-align: center;
+    width: 100%;
+}
+
+.form-email-collector {
+    width: 80%;
+    margin: 0 auto .5em;
+}
+
 /* ============= */
 /* Media queries */
 /* ============= */
