@@ -77,8 +77,10 @@ strong { font-weight: 900; }
 .section-registration { padding: 2em 1em; }
 
 .section-intro {
+    background-blend-mode: overlay;
     background-color: #404040;
-    background-image: url(../images/dark-ribs.jpg); /* step up/out: ../.. !!! */
+    background-image: url(../images/ribs.jpg); /* step up/out: ../.. !!! */
+    /* background-image: url(../images/ribs.jpg), linear-gradient(45deg, red, blue); */
     background-position: center;
     background-size: cover;
     padding-top: 0;
