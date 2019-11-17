@@ -51,7 +51,8 @@ h2 {
 
 .p-intro-top-text {
     align-self: center;
-    border-top: 5px solid #F18119;
+    border-image: linear-gradient(90deg, #ffa51d, #ff713b) 1;
+    border-top: 5px solid;
     color: #F18119;
     font-size: 0.625rem;
     font-weight: 900;
