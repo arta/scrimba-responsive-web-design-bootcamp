@@ -109,7 +109,11 @@ input {
     font-family: inherit;
     font-size: inherit;
     padding: .25em;
+    transition: transform .35s;
 }
+
+input:focus,
+input:hover { transform: scale(1.04); }
 
 .form-email-collector {
     width: 80%;
@@ -132,8 +136,9 @@ input {
     transition: transform .35s;
     /* transition: color .35s; */
 }
+.btn-primary:focus,
 .btn-primary:hover {
-    transform: scale(1.1);
+    transform: scale(1.04);
     /* background-color: #f18119; */
     /* color: #404040; */
 }
