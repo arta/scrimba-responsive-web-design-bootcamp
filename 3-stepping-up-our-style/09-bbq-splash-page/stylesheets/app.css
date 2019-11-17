@@ -69,10 +69,10 @@ strong { font-weight: 900; }
 /* Layout */
 /* ====== */
 
-.sect-intro,
-.sect-registration { padding: 2em 1em; }
+.section-intro,
+.section-registration { padding: 2em 1em; }
 
-.sect-intro {
+.section-intro {
     background-color: #404040;
     background-image: url(../images/dark-ribs.jpg); /* step up/out: ../.. !!! */
     background-position: center;
@@ -160,8 +160,8 @@ input {
         min-height: 100vh; 
     }
 
-    .sect-intro,
-    .sect-registration {
+    .section-intro,
+    .section-registration {
         /* stretch children - now flex-items - vertically */
         /* via flex-items' default `align-self: stretch;` */
         /* replaces declaring 100% height on container's children */
@@ -169,7 +169,7 @@ input {
         width: 50%; 
     }
 
-    .sect-registration {
+    .section-registration {
         flex-direction: column;
         justify-content: center;
     }
