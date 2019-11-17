@@ -129,11 +129,13 @@ input {
 .btn-primary {
     background-image: linear-gradient(90deg, #ffa51d, #ff713b);
     color: white;
-    transition: color .35s;
+    transition: transform .35s;
+    /* transition: color .35s; */
 }
 .btn-primary:hover {
-    background-color: #f18119;
-    color: #404040;
+    transform: scale(1.1);
+    /* background-color: #f18119; */
+    /* color: #404040; */
 }
 
 /* ============= */
