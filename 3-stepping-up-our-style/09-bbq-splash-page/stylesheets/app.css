@@ -49,6 +49,8 @@ h2 {
     margin-bottom: .2em;
 }
 
+strong { font-weight: 900; }
+
 .p-intro-top-text {
     align-self: center;
     border-image: linear-gradient(90deg, #ffa51d, #ff713b) 1;
@@ -66,8 +68,6 @@ h2 {
     font-size: 0.625rem;
     letter-spacing: 1px;
 }
-
-strong { font-weight: 900; }
 
 /* ====== */
 /* Layout */
@@ -117,7 +117,6 @@ input {
     padding: .25em;
     transition: transform .35s;
 }
-
 input:focus,
 input:hover { transform: scale(1.04); }
 
