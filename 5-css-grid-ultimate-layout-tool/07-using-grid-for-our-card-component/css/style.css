@@ -43,7 +43,6 @@ strong { font-size: 1.75rem; }
 .p-card-body { line-height: 1.6; }
 
 .p-card-read-time { 
-    flex: 0;
     font-size: 1.125rem;
     margin-bottom: 0;
 }
@@ -69,24 +68,8 @@ strong { font-size: 1.75rem; }
     max-width: 320px;
 }
 
-.container-card {
-    display: flex;
-    height: 398px;
-    flex-direction: column;
-    padding: 2em;
-}
-
-.card-read-more {
-    align-items: flex-end;
-    display: flex;
-    justify-content: space-between;
-    margin-top: auto;
-}
-
 .img-card {
     object-fit: cover;
-    height: 195px;
-    width: 100%;
 }
 
 /* MEDIA QUERIES */
@@ -95,17 +78,4 @@ strong { font-size: 1.75rem; }
     h2 { font-size: 2.125rem; }
 
     .p-card-body { font-size: 1.125rem; }
-
-    .card,
-    .container-card { height: 390px; }
-
-    .card {
-        display: flex;
-        max-width: 771px;
-    }
-    
-    .img-card {
-        height: 100%;
-        width: 255px;
-    }
 }
