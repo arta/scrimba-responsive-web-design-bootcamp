@@ -104,5 +104,25 @@ strong { font-size: 1.75rem; }
 @media (min-width: 560px) {
     h2 { font-size: 2.125rem; }
 
-    .p-card-body { font-size: 1.125rem; }
+    .h2-card,
+    .p-card-body { grid-column: 3 / -2; }
+
+    .h2-card { grid-row: 2; }
+
+    .p-card-body {
+        font-size: 1.125rem;
+        grid-row: 3;
+    }
+
+    .p-card-read-time { grid-column: 3; }
+
+    .card {
+        grid: 2em auto auto 150px 2em / 195px 2em auto auto 2em;
+        max-width: 771px;
+    }
+
+    .img-card {
+        grid-column: 1;
+        grid-row: 1 / -1;
+    }
 }
