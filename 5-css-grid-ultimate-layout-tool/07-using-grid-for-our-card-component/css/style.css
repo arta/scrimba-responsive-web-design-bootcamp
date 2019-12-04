@@ -40,19 +40,30 @@ h2 {
 
 strong { font-size: 1.75rem; }
 
+.h2-card,
+.p-card-body {
+    grid-column: 1 / -1;
+}
+
 .p-card-body { line-height: 1.6; }
 
-.p-card-read-time { 
+.p-card-read-time {
+    align-self: end;
+    display: flex;
     font-size: 1.125rem;
     margin-bottom: 0;
 }
 
+.span-shrink-off { flex: 0; }
+
 .a-button-card-read-more {
+    align-self: end;
     background: #05cbe9;
     color: #111d4a;
     display: inline-block;
     font-size: 1.25rem;
     font-weight: bold;
+    justify-self: end;
     letter-spacing: 1px;
     padding: .5em 1.4em;
     text-align: center;
@@ -64,12 +75,20 @@ strong { font-size: 1.75rem; }
 .card {
     background: #111d4a;
     color: #ffffff80;
+    display: grid;
+    grid: 195px auto auto 150px / auto auto;
     margin: 0 auto;
     max-width: 320px;
 }
 
 .img-card {
+    /* Although default for regular elements, */
+    /* align-, justify- must be explicitly declared on img */
+    /* to override img native size ratios, behaviors: */
+    align-self: stretch;
+    grid-column: 1 / -1;
     object-fit: cover;
+    justify-self: stretch;
 }
 
 /* MEDIA QUERIES */
