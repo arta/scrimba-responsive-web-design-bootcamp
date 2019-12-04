@@ -105,7 +105,7 @@ strong { font-size: 1.75rem; }
     h2 { font-size: 2.125rem; }
 
     .h2-card,
-    .p-card-body { grid-column: 3 / -2; }
+    .p-card-body { grid-column: 2 / -2; }
 
     .h2-card { grid-row: 2; }
 
@@ -114,11 +114,12 @@ strong { font-size: 1.75rem; }
         grid-row: 3;
     }
 
-    .p-card-read-time { grid-column: 3; }
+    .p-card-read-time { grid-column: 2; }
 
     .card {
-        grid: 2em auto auto 150px 2em / 195px 2em auto auto 2em;
+        grid: 2em auto auto 150px 2em / 195px auto auto;
         max-width: 771px;
+        column-gap: 2em;
     }
 
     .img-card {
