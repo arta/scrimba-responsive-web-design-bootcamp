@@ -41,16 +41,23 @@ h2 {
 strong { font-size: 1.75rem; }
 
 .h2-card,
-.p-card-body {
-    grid-column: 1 / -1;
-}
+.p-card-body { grid-column: 2 / -2; }
 
-.p-card-body { line-height: 1.6; }
+.p-card-read-time,
+.a-button-card-read-more { grid-row: -3; }
+
+.h2-card { grid-row: 3; }
+
+.p-card-body {
+    grid-row: 4;
+    line-height: 1.6; 
+}
 
 .p-card-read-time {
     align-self: end;
     display: flex;
     font-size: 1.125rem;
+    grid-column: 2;
     margin-bottom: 0;
 }
 
@@ -63,6 +70,7 @@ strong { font-size: 1.75rem; }
     display: inline-block;
     font-size: 1.25rem;
     font-weight: bold;
+    grid-column: -3;
     justify-self: end;
     letter-spacing: 1px;
     padding: .5em 1.4em;
@@ -76,7 +84,7 @@ strong { font-size: 1.75rem; }
     background: #111d4a;
     color: #ffffff80;
     display: grid;
-    grid: 195px auto auto 150px / auto auto;
+    grid: 195px 2em auto auto 150px 2em / 2em auto auto 2em;
     margin: 0 auto;
     max-width: 320px;
 }
