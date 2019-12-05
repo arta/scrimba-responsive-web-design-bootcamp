@@ -48,18 +48,24 @@ strong { font-size: 1.75rem; }
 }
 
 .p-card-read-time { 
+    align-self: end;
+    display: flex;
     font-size: 1.125rem;
     grid-area: footer;
     margin-bottom: 0;
 }
 
+.span-shrink-off { flex: 0; }
+
 .a-button-card-read-more {
+    align-self: end;
     background: #05cbe9;
     color: #111d4a;
     display: inline-block;
     font-size: 1.25rem;
     font-weight: bold;
     grid-area: footer-button;
+    justify-self: end;
     letter-spacing: 1px;
     padding: .5em 1.4em;
     text-align: center;
@@ -72,7 +78,7 @@ strong { font-size: 1.75rem; }
     background: #111d4a;
     color: #ffffff80;
     display: grid;
-    grid-template-rows: 195px auto auto auto;
+    grid-template-rows: 195px auto auto 150px;
     grid-template-areas: 
         "image image"
         "heading heading"
