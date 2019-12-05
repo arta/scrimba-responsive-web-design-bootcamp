@@ -105,13 +105,14 @@ strong { font-size: 1.75rem; }
     .p-card-body { font-size: 1.125rem; }
 
     .card {
-        grid: 2em auto auto 150px 2em / 195px 2em auto auto 2em;
+        grid: 2em auto auto 150px 2em / 195px auto auto;
+        column-gap: 2em; /* grid-gap: 0 2em; */
         grid-template-areas:
-            "image . . . ."
-            "image . heading heading ."
-            "image . body body ."
-            "image . footer footer-button ."
-            "image . . . .";
+            "image . . ."
+            "image heading heading ."
+            "image body body ."
+            "image footer footer-button ."
+            "image . . .";
         max-width: 771px;
     }
 }
