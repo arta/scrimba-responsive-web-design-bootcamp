@@ -40,10 +40,16 @@ h2 {
 
 strong { font-size: 1.75rem; }
 
-.p-card-body { line-height: 1.6; }
+.h2-card { grid-area: heading; }
+
+.p-card-body {
+    grid-area: body;
+    line-height: 1.6; 
+}
 
 .p-card-read-time { 
     font-size: 1.125rem;
+    grid-area: footer;
     margin-bottom: 0;
 }
 
@@ -53,6 +59,7 @@ strong { font-size: 1.75rem; }
     display: inline-block;
     font-size: 1.25rem;
     font-weight: bold;
+    grid-area: footer-button;
     letter-spacing: 1px;
     padding: .5em 1.4em;
     text-align: center;
@@ -64,11 +71,21 @@ strong { font-size: 1.75rem; }
 .card {
     background: #111d4a;
     color: #ffffff80;
+    display: grid;
+    grid-template-rows: 195px auto auto auto;
+    grid-template-areas: 
+        "image image"
+        "heading heading"
+        "body body"
+        "footer footer-button";
     margin: 0 auto;
     max-width: 320px;
 }
 
 .img-card {
+    align-self: stretch;
+    grid-area: image;
+    justify-self: stretch;
     object-fit: cover;
 }
 
