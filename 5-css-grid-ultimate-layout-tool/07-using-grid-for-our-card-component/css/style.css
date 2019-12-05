@@ -55,13 +55,10 @@ strong { font-size: 1.75rem; }
 
 .p-card-read-time {
     align-self: end;
-    display: flex;
     font-size: 1.125rem;
     grid-column: 2;
     margin-bottom: 0;
 }
-
-.span-shrink-off { flex: 0; }
 
 .a-button-card-read-more {
     align-self: end;
@@ -84,7 +81,7 @@ strong { font-size: 1.75rem; }
     background: #111d4a;
     color: #ffffff80;
     display: grid;
-    grid: 195px 2em auto auto 150px 2em / 2em auto auto 2em;
+    grid: 195px 2em auto auto 150px 2em / 2em min-content auto 2em;
     margin: 0 auto;
     max-width: 320px;
 }
@@ -116,8 +113,10 @@ strong { font-size: 1.75rem; }
 
     .p-card-read-time { grid-column: 2; }
 
+    .a-button-card-read-more { grid-column: 3; }
+
     .card {
-        grid: 2em auto auto 150px 2em / 195px auto auto;
+        grid: 2em auto auto 150px 2em / 195px min-content auto 0;
         max-width: 771px;
         column-gap: 2em; /* grid-gap: 0 2em; */
     }
