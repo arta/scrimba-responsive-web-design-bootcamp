@@ -77,9 +77,6 @@ a:focus { color: #143774; }
     text-decoration: underline;
 }
 
-.article-image,
-.article-info { margin: 0 0 2rem 0; }
-
 .article-image.featured {
     max-height: 308px;
     object-fit: cover;
@@ -187,8 +184,29 @@ nav a:focus { color: #1792d2; }
 }
 
 .article-recent {
+    align-items: baseline;
+    column-gap: 1em;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-areas: 
+        "image image"
+        "title info"
+        "body body"
+        "read-more .";
     margin-bottom: 2em;
 }
+
+.article-image { 
+    align-self: stretch;
+    grid-area: image;
+    justify-self: stretch;
+    margin-bottom: .5em;
+    object-fit: cover;
+}
+.article-title      { grid-area: title; }
+.article-info       { grid-area: info; }
+.article-body       { grid-area: body; }
+.article-read-more  { grid-area: read-more; }
 
 @media (min-width: 675px) {
 
