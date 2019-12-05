@@ -91,6 +91,7 @@ strong { font-size: 1.75rem; }
 }
 
 .img-card {
+    /* must explicitly align-, justify- image to override native size ratios */
     align-self: stretch;
     grid-area: image;
     justify-self: stretch;
