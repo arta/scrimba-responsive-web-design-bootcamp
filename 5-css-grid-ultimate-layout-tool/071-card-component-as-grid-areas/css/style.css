@@ -78,12 +78,14 @@ strong { font-size: 1.75rem; }
     background: #111d4a;
     color: #ffffff80;
     display: grid;
-    grid-template-rows: 195px auto auto 150px;
+    grid: 195px 2em auto auto 150px 2em / 2em auto auto 2em;
     grid-template-areas: 
-        "image image"
-        "heading heading"
-        "body body"
-        "footer footer-button";
+        "image image image image"
+        ". . . ."
+        ". heading heading ."
+        ". body body ."
+        ". footer footer-button ."
+        ". . . .";
     margin: 0 auto;
     max-width: 320px;
 }
