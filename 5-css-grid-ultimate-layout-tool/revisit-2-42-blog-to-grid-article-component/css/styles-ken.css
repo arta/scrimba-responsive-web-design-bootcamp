@@ -209,7 +209,15 @@ nav a:focus { color: #1792d2; }
 .article-read-more  { grid-area: read-more; }
 
 @media (min-width: 675px) {
-
+    .article-recent {
+        grid-template-columns: minmax(150px, 2fr) 5fr;
+        grid-template-areas: 
+            "image title"
+            "image body"
+            "image read-more"
+            "info info"; /* to shrink, do: "info ."; */
+    }
+    .article-image { margin-bottom: 0; }
 }
 
 /* widgets */
