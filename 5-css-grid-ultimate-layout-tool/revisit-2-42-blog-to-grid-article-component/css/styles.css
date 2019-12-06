@@ -226,11 +226,15 @@ footer {
         grid-template-areas: 
             "image heading"
             "image body"
-            "info continue";
-        grid-template-columns: 1fr 2fr;
+            "image continue"
+            "info .";
+        grid-template-columns: minmax(150px, 1fr) 2fr;
     }
 
-    .img-article-recent { align-self: stretch; }
+    .img-article-recent { 
+        align-self: stretch;
+        height: unset;
+    }
 }
 
 /* navigation */
