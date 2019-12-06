@@ -109,7 +109,7 @@ a:hover { color: #00609b; }
     font-weight: 700;
     grid-area: continue;
     letter-spacing: .16rem;
-    margin: .5em 0 2.5em;
+    margin-top: .5em;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -128,13 +128,15 @@ header {
 main,
 aside { margin-bottom: 3em; }
 
+article { margin-bottom: 2.5em; }
+
 .article-featured {
     display: flex;
     flex-direction: column;
 }
 .article-featured.home {
     border-bottom: 1px solid #707070;
-    margin-bottom: 2em;
+    padding-bottom: 2em;
 }
 
 .article-recent {
@@ -145,7 +147,6 @@ aside { margin-bottom: 3em; }
         "heading info"
         "body body"
         "continue .";
-    margin-bottom: 1em;
 }
 
 footer {
