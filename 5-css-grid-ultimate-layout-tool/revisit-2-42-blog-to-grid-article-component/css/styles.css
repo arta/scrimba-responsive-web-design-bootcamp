@@ -54,7 +54,10 @@ h2 {
     font-weight: 300;
     letter-spacing: .02rem;
 }
-.h2-article { margin-top: -.3em; }
+.h2-article { 
+    grid-area: heading;
+    margin-top: -.3em; 
+}
 .h2-widget {
    font-family: 'Ubuntu', sans-serif;
    font-size: 1rem;
@@ -75,7 +78,12 @@ h3 {
 p { letter-spacing: .02rem; }
 .p-article-info,
 .p-footer { color: #93A3BF; }
-.p-article-info { font-size: .8em; }
+.p-article-body { grid-area: body; }
+.p-article-info { 
+    font-size: .8em; 
+    grid-area: info;
+    justify-self: right;
+}
 .p-article-info.home { order: -1; }
 .p-subtitle {
     color: #1792d2;
@@ -99,8 +107,9 @@ a:hover { color: #00609b; }
     display: inline-block;
     font-size: .8rem;
     font-weight: 700;
+    grid-area: continue;
     letter-spacing: .16rem;
-    margin: 1em 0 2em;
+    margin: .5em 0 2.5em;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -126,6 +135,17 @@ aside { margin-bottom: 3em; }
 .article-featured.home {
     border-bottom: 1px solid #707070;
     margin-bottom: 2em;
+}
+
+.article-recent {
+    align-items: baseline;
+    display: grid;
+    grid-template-areas: 
+        "image image"
+        "heading info"
+        "body body"
+        "continue .";
+    margin-bottom: 1em;
 }
 
 footer {
@@ -176,10 +196,11 @@ footer {
     */
 }
 .img-article-recent {
+    grid-area: image;
     height: 242px;
-    margin-bottom: .3em;
+    justify-self: stretch;
+    margin-bottom: .75em;
     object-fit: cover;
-    width: 100%;
 }
 .img-widget { 
     height: 87px; 
