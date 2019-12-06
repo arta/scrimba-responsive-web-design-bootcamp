@@ -226,8 +226,7 @@ footer {
         grid-template-areas: 
             "image heading"
             "image body"
-            "image continue"
-            "info .";
+            "info continue";
         grid-template-columns: 1fr 2fr;
     }
 
