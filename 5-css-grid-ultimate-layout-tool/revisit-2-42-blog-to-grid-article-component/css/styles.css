@@ -212,11 +212,25 @@ footer {
 
 @media (min-width: 675px) {
 
+    .p-article-info { justify-self: left; }
+
     .container-flex { flex-direction: row; }
 
     main { flex: 0 0 70%; }
 
     aside { flex: 0 1 24%; }
+
+    .article-recent {
+        column-gap: 1.5em;
+        grid-template-areas: 
+            "image heading"
+            "image body"
+            "image continue"
+            "info .";
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .img-article-recent { align-self: stretch; }
 }
 
 /* navigation */
