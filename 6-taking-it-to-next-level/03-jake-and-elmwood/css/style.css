@@ -1,0 +1,42 @@
+/* ------ */
+/* GLOBAL */
+/* ------ */
+
+* {
+   /* border: 1px dotted black; */
+   box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* ---------- */
+/* TYPOGRAPHY */
+/* ---------- */
+
+
+
+/* ------ */
+/* LAYOUT */
+/* ------ */
+
+
+
+/* ---------- */
+/* NAVIGATION */
+/* ---------- */
+
+
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
