@@ -14,8 +14,10 @@ html {
 }
 
 body {
+    color: #404040;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+    line-height: 1.6;
 }
 
 img {
@@ -28,6 +30,9 @@ img {
 /* TYPOGRAPHY */
 /* ---------- */
 
+h1,
+h2,
+strong { font-weight: 700; }
 
 
 /* ------ */
