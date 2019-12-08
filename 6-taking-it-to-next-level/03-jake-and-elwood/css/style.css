@@ -43,7 +43,13 @@ strong { font-weight: 700; }
 /* LAYOUT */
 /* ------ */
 
-
+.section-main-hero {
+    background-image: url(../img/hero-bg.jpg);
+    color: white;
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
+}
+.section-main-hero > * { grid-column: 2 / -2; }
 
 /* ---------- */
 /* NAVIGATION */
