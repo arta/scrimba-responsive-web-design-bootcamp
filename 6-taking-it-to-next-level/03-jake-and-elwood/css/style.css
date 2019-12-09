@@ -39,6 +39,11 @@ strong { font-weight: 700; }
 
 .h1-hero { font-size: 1.5rem; }
 
+.h2-main {
+    color: black;
+    font-size: 1.125rem;
+}
+
 .span-accent { color: #ffe600; }
 
 .btn {
@@ -71,6 +76,11 @@ strong { font-weight: 700; }
 .base-grid {
     display: grid;
     grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
+}
+
+.col-main-content-home {
+    margin-top: 1.25em;
+    text-align: center;
 }
 
 .header-container { display: flex; }
