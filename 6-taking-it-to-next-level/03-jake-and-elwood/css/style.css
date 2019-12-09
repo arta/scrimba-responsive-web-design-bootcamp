@@ -59,9 +59,12 @@ strong { font-weight: 700; }
     margin-top: 1em;
 }
 
+
 /* ------ */
 /* LAYOUT */
 /* ------ */
+
+.header-container { display: flex; }
 
 .section-main-hero {
     background-image: url(../img/hero-bg.jpg);
@@ -70,12 +73,17 @@ strong { font-weight: 700; }
     grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
     padding: 4em 0;
 }
+
 .section-main-hero > * { grid-column: 2 / -2; }
+
 
 /* ---------- */
 /* NAVIGATION */
 /* ---------- */
 
+.ul-nav-header { margin: 0; }
+
+.li-nav-header { display: inline; }
 
 
 /* ------------- */
