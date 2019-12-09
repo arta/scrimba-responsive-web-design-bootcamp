@@ -42,6 +42,23 @@ strong { font-weight: 700; }
 
 .span-accent { color: #ffe600; }
 
+.btn {
+    display: inline-block;
+    font-weight: 700;
+    padding: .5em 1.75em;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #ffe600;
+    color: black;
+}
+
+.btn-hero {
+    justify-self: start;
+    margin-top: 1em;
+}
+
 /* ------ */
 /* LAYOUT */
 /* ------ */
