@@ -38,6 +38,9 @@ h1,
 h2,
 strong { font-weight: 700; }
 
+.h1-hero { font-size: 1.5rem; }
+
+.span-accent { color: #ffe600; }
 
 /* ------ */
 /* LAYOUT */
@@ -48,6 +51,7 @@ strong { font-weight: 700; }
     color: white;
     display: grid;
     grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
+    padding: 4em 0;
 }
 .section-main-hero > * { grid-column: 2 / -2; }
 
