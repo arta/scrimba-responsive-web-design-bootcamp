@@ -62,13 +62,16 @@ strong { font-weight: 700; }
 /* LAYOUT */
 /* ------ */
 
+.base-grid {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
+}
+
 .header-container { display: flex; }
 
 .section-main-hero {
     background-image: url(../img/hero-bg.jpg);
     color: white;
-    display: grid;
-    grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
     padding: 4em 0;
 }
 
