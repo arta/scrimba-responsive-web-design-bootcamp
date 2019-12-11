@@ -70,11 +70,23 @@ strong { font-weight: 700; }
 /* LAYOUT */
 /* ------ */
 
+footer,
 .section-main-hero,
 .section-main-content-home { padding: 4em 0; }
 
+footer > *,
 .section-main-hero > *,
 .section-main-content-home > * { grid-column: 2 / -2; }
+
+footer {
+    background: #ebebeb;
+    text-align: center;
+}
+
+.aside-footer-social-links {
+    margin-bottom: 2em;
+    order: -1;
+}
 
 .base-grid {
     display: grid;
