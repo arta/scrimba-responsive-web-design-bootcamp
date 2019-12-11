@@ -110,6 +110,8 @@ footer {
 
 .section-main-hero {
     background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position-y: bottom;
     color: white;
 }
 
@@ -124,3 +126,13 @@ footer {
 /* ############# */
 /* MEDIA QUERIES */
 /* ------------- */
+
+@media (min-width: 600px) {
+    .section-main-hero > * { grid-column: 2 / span 2; }
+
+    .base-grid {
+        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(180px, 320px)) minmax(1em, 1fr);
+    }
+
+    .section-main-hero { padding: 6em 0; }
+}
