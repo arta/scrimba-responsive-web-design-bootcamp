@@ -124,6 +124,8 @@ footer {
     color: white;
 }
 
+.img-footer-logo { margin: 0 auto 1em; }
+
 /* ########## */
 /* NAVIGATION */
 /* ---------- */
@@ -160,4 +162,6 @@ footer {
     .section-footer-main { text-align: left; }
 
     .section-main-hero { padding: 6em 0; }
+
+    .img-footer-logo { margin-left: 0 }
 }
