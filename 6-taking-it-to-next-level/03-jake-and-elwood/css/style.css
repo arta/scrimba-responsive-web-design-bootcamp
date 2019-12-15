@@ -130,9 +130,14 @@ footer {
 @media (min-width: 600px) {
     .section-main-hero > * { grid-column: 2 / span 2; }
 
+    .section-main-content-home > * { grid-column: span 1; }
+
     .base-grid {
-        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(180px, 320px)) minmax(1em, 1fr);
+        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(150px, 320px)) minmax(1em, 1fr);
+        column-gap: 2em;
     }
+
+    .col-main-content-home:first-child { grid-column: 2; }
 
     .section-main-hero { padding: 6em 0; }
 }
