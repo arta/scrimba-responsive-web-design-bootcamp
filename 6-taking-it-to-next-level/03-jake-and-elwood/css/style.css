@@ -90,13 +90,13 @@ footer,
 footer {
     background: #ebebeb;
     grid-template-areas:
-        ". social-links ."
-        ". site-info .";
+        ". social ."
+        ". main .";
     text-align: center;
 }
 
-.aside-footer-social-links {
-    grid-area: social-links;
+.aside-footer-social {
+    grid-area: social;
     margin-bottom: 2em;
 }
 
@@ -112,8 +112,8 @@ footer {
 
 .header-container { display: flex; }
 
-.section-footer-site-info {
-    grid-area: site-info;
+.section-footer-main {
+    grid-area: main;
     opacity: .4;
 }
 
@@ -138,13 +138,13 @@ footer {
 
 @media (min-width: 600px) {
 
-    footer { grid-template-areas: ". site-info site-info social-links ."; }
+    footer { grid-template-areas: ". main main social ."; }
 
     .section-main-hero > * { grid-column: 2 / span 2; }
 
     .section-main-content-home > * { grid-column: span 1; }
 
-    .aside-footer-social-links {
+    .aside-footer-social {
         align-self: center;
         margin-bottom: unset;
         text-align: right;
@@ -157,7 +157,7 @@ footer {
 
     .col-main-content-home:first-child { grid-column: 2; }
 
-    .section-footer-site-info { text-align: left; }
+    .section-footer-main { text-align: left; }
 
     .section-main-hero { padding: 6em 0; }
 }
