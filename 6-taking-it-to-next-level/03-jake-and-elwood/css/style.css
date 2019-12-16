@@ -37,6 +37,8 @@ h1,
 h2,
 strong { font-weight: 700; }
 
+/* ---------- */
+
 .h1-hero {
     font-size: 1.5rem;
     line-height: 1.4;
@@ -51,6 +53,8 @@ strong { font-weight: 700; }
 
 .span-accent { color: #ffe600; }
 
+/* ---------- */
+
 .a-footer-social {
     color: #000;
     font-size: 1.75rem;
@@ -58,6 +62,8 @@ strong { font-weight: 700; }
 }
 
 .a-footer-social:hover { color: #777; }
+
+/* ---------- */
 
 .btn {
     display: inline-block;
@@ -86,6 +92,8 @@ footer,
 
 .main-section-hero > *,
 .main-section-main-home > * { grid-column: 2 / -2; }
+
+/* ------ */
 
 footer {
     background: #ebebeb;
@@ -124,6 +132,8 @@ footer {
     color: white;
 }
 
+/* ------ */
+
 .img-footer-logo { margin: 0 auto 1em; }
 
 /* ########## */
@@ -144,6 +154,8 @@ footer {
 
     .main-section-main-home > * { grid-column: span 1; }
 
+    /* ------------- */
+
     footer { grid-template-areas: ". main main social ."; }
 
     .base-grid {
@@ -162,6 +174,8 @@ footer {
     .main-col-home:first-child { grid-column: 2; }
 
     .main-section-hero { padding: 6em 0; }
+
+    /* ------------- */
 
     .img-footer-logo { margin-left: 0 }
 }
