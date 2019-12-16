@@ -172,7 +172,8 @@ header { background: black; }
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 100vw;
+    width: 100vw;
 }
 
 .header-nav-ul {
