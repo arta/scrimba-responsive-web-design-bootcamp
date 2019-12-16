@@ -39,17 +39,17 @@ strong { font-weight: 700; }
 
 /* ---------- */
 
-.h1-hero {
+.hero-h1 {
     font-size: 1.5rem;
     line-height: 1.4;
 }
 
-.h2-main {
+.main-col-h2 {
     color: black;
     font-size: 1.25rem;
 }
 
-.p-footer { margin-bottom: 4em; }
+.footer-p { margin-bottom: 4em; }
 
 .span-accent { color: #ffe600; }
 
@@ -134,15 +134,15 @@ footer {
 
 /* ------ */
 
-.img-footer-logo { margin: 0 auto 1em; }
+.footer-img-logo { margin: 0 auto 1em; }
 
 /* ########## */
 /* NAVIGATION */
 /* ---------- */
 
-.ul-header-nav { margin: 0; }
+.header-nav-ul { margin: 0; }
 
-.li-header-nav { display: inline; }
+.header-nav-li { display: inline; }
 
 /* ############# */
 /* MEDIA QUERIES */
@@ -177,5 +177,5 @@ footer {
 
     /* ------------- */
 
-    .img-footer-logo { margin-left: 0 }
+    .footer-img-logo { margin-left: 0 }
 }
