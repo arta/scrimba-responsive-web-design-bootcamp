@@ -164,6 +164,16 @@ header { background: black; }
     position: absolute;
 }
 
+.btn-header-nav-open {
+    background: 0;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: auto;
+    padding: 0;
+}
+
 .header-container { display: flex; }
 
 .header-nav {
