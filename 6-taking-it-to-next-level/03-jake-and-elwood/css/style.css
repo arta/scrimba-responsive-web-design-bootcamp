@@ -184,6 +184,7 @@ header { background: black; }
     bottom: 0;
     left: 100vw;
     width: 100vw;
+    transition: left 250ms;
 }
 
 .header-nav-open { left: 0; }
