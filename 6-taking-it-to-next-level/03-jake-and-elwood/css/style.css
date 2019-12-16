@@ -3,7 +3,7 @@
 /* ------ */
 
 * {
-   /* border: 1px dotted black; */
+   /* border: 1px dotted hotpink; */
    box-sizing: border-box;
 }
 
@@ -146,12 +146,30 @@ header { background: black; }
     padding-top: 2em;
 }
 
-.a-header-nav { color: white; }
+.a-header-nav {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 700;
+}
 
 .header-container { display: flex; }
 
+.header-nav {
+    position: fixed;
+    background: black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
 .header-nav-ul {
+    align-items: center;
+    justify-content: space-around;
     display: flex;
+    flex-direction: column;
+    height: 100vh;
     list-style: none;
     margin: 0;
     padding: 0;
