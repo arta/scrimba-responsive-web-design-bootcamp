@@ -47,7 +47,7 @@ strong { font-weight: 700; }
     font-size: 1.25rem;
 }
 
-.p-footer-body { margin-bottom: 4em; }
+.p-footer { margin-bottom: 4em; }
 
 .span-accent { color: #ffe600; }
 
@@ -68,13 +68,13 @@ strong { font-weight: 700; }
     margin-top: 1em;
 }
 
-.social-link {
+.a-footer-social {
     color: #000;
     font-size: 1.75rem;
     margin: 0 .5em;
 }
 
-.social-link:hover { color: #777; }
+.a-footer-social:hover { color: #777; }
 
 /* ###### */
 /* LAYOUT */
@@ -130,9 +130,9 @@ footer {
 /* NAVIGATION */
 /* ---------- */
 
-.ul-nav-header { margin: 0; }
+.ul-header-nav { margin: 0; }
 
-.li-nav-header { display: inline; }
+.li-header-nav { display: inline; }
 
 /* ############# */
 /* MEDIA QUERIES */
