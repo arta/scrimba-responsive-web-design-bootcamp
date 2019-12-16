@@ -65,19 +65,19 @@ strong { font-weight: 700; }
 
 /* ---------- */
 
-.btn {
+.a-btn {
     display: inline-block;
     font-weight: 700;
     padding: .5em 1.75em;
     text-decoration: none;
 }
 
-.btn-primary {
+.a-btn-primary {
     background: #ffe600;
     color: black;
 }
 
-.btn-hero {
+.a-btn-hero {
     justify-self: start;
     margin-top: 1em;
 }
@@ -159,6 +159,7 @@ header { background: black; }
     color: #ffe600;
     cursor: pointer;
     font-size: 3rem;
+    font-weight: 700;
     padding: .5em;
     position: absolute;
 }
