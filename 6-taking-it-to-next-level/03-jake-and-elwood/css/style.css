@@ -51,6 +51,14 @@ strong { font-weight: 700; }
 
 .span-accent { color: #ffe600; }
 
+.a-footer-social {
+    color: #000;
+    font-size: 1.75rem;
+    margin: 0 .5em;
+}
+
+.a-footer-social:hover { color: #777; }
+
 .btn {
     display: inline-block;
     font-weight: 700;
@@ -67,14 +75,6 @@ strong { font-weight: 700; }
     justify-self: start;
     margin-top: 1em;
 }
-
-.a-footer-social {
-    color: #000;
-    font-size: 1.75rem;
-    margin: 0 .5em;
-}
-
-.a-footer-social:hover { color: #777; }
 
 /* ###### */
 /* LAYOUT */
@@ -95,26 +95,26 @@ footer {
     text-align: center;
 }
 
-.footer-aside-social {
-    grid-area: social;
-    margin-bottom: 2em;
-}
-
 .base-grid {
     display: grid;
     grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
 }
 
-.main-col-home {
-    margin-top: 1.25em;
-    text-align: center;
+.footer-aside-social {
+    grid-area: social;
+    margin-bottom: 2em;
 }
-
-.header-container { display: flex; }
 
 .footer-section-main {
     grid-area: main;
     opacity: .4;
+}
+
+.header-container { display: flex; }
+
+.main-col-home {
+    margin-top: 1.25em;
+    text-align: center;
 }
 
 .main-section-hero {
@@ -140,11 +140,18 @@ footer {
 
 @media (min-width: 600px) {
 
-    footer { grid-template-areas: ". main main social ."; }
-
     .main-section-hero > * { grid-column: 2 / span 2; }
 
     .main-section-main-home > * { grid-column: span 1; }
+
+    footer { grid-template-areas: ". main main social ."; }
+
+    .base-grid {
+        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(150px, 320px)) minmax(1em, 1fr);
+        column-gap: 2em;
+    }
+
+    .footer-section-main { text-align: left; }
 
     .footer-aside-social {
         align-self: center;
@@ -152,14 +159,7 @@ footer {
         text-align: right;
     }
 
-    .base-grid {
-        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(150px, 320px)) minmax(1em, 1fr);
-        column-gap: 2em;
-    }
-
     .main-col-home:first-child { grid-column: 2; }
-
-    .footer-section-main { text-align: left; }
 
     .main-section-hero { padding: 6em 0; }
 
