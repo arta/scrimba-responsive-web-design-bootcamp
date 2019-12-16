@@ -39,6 +39,8 @@ strong { font-weight: 700; }
 
 /* ---------- */
 
+.footer-p { margin-bottom: 4em; }
+
 .hero-h1 {
     font-size: 1.5rem;
     line-height: 1.4;
@@ -48,8 +50,6 @@ strong { font-weight: 700; }
     color: black;
     font-size: 1.25rem;
 }
-
-.footer-p { margin-bottom: 4em; }
 
 .span-accent { color: #ffe600; }
 
@@ -95,17 +95,17 @@ footer,
 
 /* ------ */
 
+.base-grid {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
+}
+
 footer {
     background: #ebebeb;
     grid-template-areas:
         ". social ."
         ". main .";
     text-align: center;
-}
-
-.base-grid {
-    display: grid;
-    grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
 }
 
 .footer-aside-social {
@@ -156,20 +156,20 @@ footer {
 
     /* ------------- */
 
-    footer { grid-template-areas: ". main main social ."; }
-
     .base-grid {
         grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(150px, 320px)) minmax(1em, 1fr);
         column-gap: 2em;
     }
 
-    .footer-section-main { text-align: left; }
+    footer { grid-template-areas: ". main main social ."; }
 
     .footer-aside-social {
         align-self: center;
         margin-bottom: unset;
         text-align: right;
     }
+
+    .footer-section-main { text-align: left; }
 
     .main-col-home:first-child { grid-column: 2; }
 
