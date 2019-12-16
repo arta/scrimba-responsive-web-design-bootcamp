@@ -90,6 +90,7 @@ footer,
 .main-section-hero,
 .main-section-main-home { padding: 4em 0; }
 
+.header-container,
 .main-section-hero > *,
 .main-section-main-home > * { grid-column: 2 / -2; }
 
