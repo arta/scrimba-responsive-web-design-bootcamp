@@ -176,6 +176,8 @@ header { background: black; }
     width: 100vw;
 }
 
+.header-nav-open { left: 0; }
+
 .header-nav-ul {
     align-items: center;
     justify-content: space-around;
