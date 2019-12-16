@@ -153,11 +153,14 @@ header { background: black; }
     font-weight: 700;
 }
 
-.btn-header-nav-close {
+.btn {
     background: 0;
     border: 0;
-    color: #ffe600;
     cursor: pointer;
+}
+
+.btn-header-nav-close {
+    color: #ffe600;
     font-size: 3rem;
     font-weight: 700;
     padding: .5em;
@@ -165,10 +168,7 @@ header { background: black; }
 }
 
 .btn-header-nav-open {
-    background: 0;
-    border: 0;
     color: white;
-    cursor: pointer;
     font-size: 2rem;
     margin-left: auto;
     padding: 0;
