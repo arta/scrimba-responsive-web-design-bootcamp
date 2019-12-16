@@ -153,6 +153,16 @@ header { background: black; }
     font-weight: 700;
 }
 
+.btn-close-header-nav {
+    background: 0;
+    border: 0;
+    color: #ffe600;
+    cursor: pointer;
+    font-size: 3rem;
+    padding: .5em;
+    position: absolute;
+}
+
 .header-container { display: flex; }
 
 .header-nav {
