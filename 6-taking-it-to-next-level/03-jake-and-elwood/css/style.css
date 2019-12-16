@@ -118,7 +118,7 @@ footer {
     opacity: .4;
 }
 
-.header-container { display: flex; }
+header { background: black; }
 
 .main-col-home {
     margin-top: 1.25em;
@@ -140,9 +140,21 @@ footer {
 /* NAVIGATION */
 /* ---------- */
 
-.header-nav-ul { margin: 0; }
+.a-header-logo {
+    background: #ffe600;
+    padding-top: 2em;
+}
 
-.header-nav-li { display: inline; }
+.a-header-nav { color: white; }
+
+.header-container { display: flex; }
+
+.header-nav-ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
 /* ############# */
 /* MEDIA QUERIES */
