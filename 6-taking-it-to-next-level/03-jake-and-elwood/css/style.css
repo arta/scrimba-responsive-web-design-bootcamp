@@ -182,11 +182,15 @@ header { background: black; }
     top: 0;
     right: 0;
     bottom: 0;
+    /* shift to right, off of the canvas */
     left: 100vw;
     width: 100vw;
+    /* transition close/open states smoothly */
     transition: left 250ms;
 }
 
+/* a state class */
+/* is added|removed in js/script.js */
 .header-nav-open { left: 0; }
 
 .header-nav-ul {
