@@ -238,4 +238,24 @@ header { background: black; }
     /* ------------- */
 
     .footer-img-logo { margin-left: 0 }
+
+    /* ------------- */
+
+    .a-header-nav {
+        font-size: 1rem;
+        margin-left: 2em;
+    }
+
+    .btn-header-nav-close,
+    .btn-header-nav-open { display: none; }
+
+    .header-nav {
+        position: unset;
+        transform: translateX(0);
+    }
+
+    .header-nav-ul {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
 }
