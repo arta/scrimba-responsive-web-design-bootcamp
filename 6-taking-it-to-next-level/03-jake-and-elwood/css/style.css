@@ -175,22 +175,24 @@ header { background: black; }
 }
 
 .header-container {
+    /* align items center is a hack for Safari */
+    /* prevent small screen nav content */
+    /* vertical shifting out of the screen top */
     align-items: center;
     display: flex;
 }
 
 .header-nav {
-    position: fixed;
     background: black;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    position: fixed;
+    top: 0; right: 0; bottom: 0;
     /* shift to right, off of the canvas */
     left: 100vw;
-    width: 100vw;
     transform: translateX(0);
     /* transition close/open states smoothly */
     transition: transform 250ms;
+    /* prevent shrinking when shifted to the right */
+    width: 100vw;
 }
 
 /* a state class */
@@ -199,10 +201,10 @@ header { background: black; }
 
 .header-nav-ul {
     align-items: center;
-    justify-content: space-around;
     display: flex;
     flex-direction: column;
     height: 100%;
+    justify-content: space-around;
     list-style: none;
     margin: 0;
     padding: 0;
