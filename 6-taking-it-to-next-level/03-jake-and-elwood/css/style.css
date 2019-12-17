@@ -37,6 +37,9 @@ h1,
 h2,
 strong { font-weight: 700; }
 
+.main-h1,
+.main-subtitle-p { text-align: center; }
+
 /* ---------- */
 
 .footer-p { margin-bottom: 4em; }
@@ -87,9 +90,11 @@ strong { font-weight: 700; }
 /* ------ */
 
 footer,
+.main-about,
 .main-section-main-home { padding: 4em 0; }
 
 .header-container,
+.main-about > *,
 .main-section-hero > *,
 .main-section-main-home > * { grid-column: 2 / -2; }
 
@@ -142,6 +147,11 @@ header { background: black; }
 /* ------ */
 
 .footer-img-logo { margin: 0 auto 1em; }
+
+.main-img {
+    grid-column: 2 / span 1;
+    justify-self: center;
+}
 
 /* ########## */
 /* NAVIGATION */
@@ -246,6 +256,11 @@ header { background: black; }
     .main-col-home:first-child { grid-column: 2; }
 
     .main-section-hero { padding: 8em 0 6em; }
+
+    .main-section-main {
+        grid-column: 3 / -2;
+        grid-row: 3;
+    }
 
     /* ------------- */
 
