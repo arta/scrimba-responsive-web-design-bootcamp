@@ -6,15 +6,21 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/a46ffabf68.js" crossorigin="anonymous"></script>
+    <script src="js/script.js" defer></script>
     <title>Jake & Elwood :: Contact</title>
 </head>
 
 <body>
-    <header>
+    <header class="base-grid">
         <div class="header-container">
-            <a href="index.html" class="a-header-logo"><strong>Jake</strong>&<strong>Elwood</strong></a>
+            <a href="index.html" class="a-header-logo">
+                <img src="img/logo.png" alt="" class="header-img-logo">
+            </a>
+
+            <button aria-label="open navigation" class="btn btn--header-nav-open">&#9776;</button>
 
             <nav class="header-nav">
+                <button aria-label="close navigation" class="btn btn--header-nav-close">&times;</button>
                 <ul class="header-nav-ul">
                     <li class="header-nav-li"><a href="index.html" class="a-header-nav">Home</a></li>
                     <li class="header-nav-li"><a href="about.html" class="a-header-nav">About us</a></li>
