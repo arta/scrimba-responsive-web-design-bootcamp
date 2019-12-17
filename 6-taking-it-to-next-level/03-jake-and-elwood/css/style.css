@@ -174,7 +174,10 @@ header { background: black; }
     padding: 0;
 }
 
-.header-container { display: flex; }
+.header-container {
+    align-items: center;
+    display: flex;
+}
 
 .header-nav {
     position: fixed;
