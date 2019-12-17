@@ -121,6 +121,12 @@ footer {
 
 header { background: black; }
 
+.header-home {
+    background: transparent;
+    position: absolute;
+    width: 100vw;
+}
+
 .main-col-home {
     margin-top: 1.25em;
     text-align: center;
@@ -254,6 +260,8 @@ header { background: black; }
     .btn--header-nav-open { display: none; }
 
     .header-nav { position: static; }
+
+    .header-nav--home { background: transparent; }
 
     /* un-slide (now large screen) .header-nav back into viewport */
     /* upon resizing browser window up with small screen .header-nav open */
