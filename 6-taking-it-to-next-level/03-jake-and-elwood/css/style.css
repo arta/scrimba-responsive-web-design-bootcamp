@@ -185,7 +185,7 @@ header { background: black; }
 .header-nav {
     background: black;
     position: fixed;
-    top: 0; right: 0; bottom: 0;
+    top: 0; bottom: 0;
     /* shift to right, off of the canvas */
     left: 100vw;
     transform: translateX(0);
