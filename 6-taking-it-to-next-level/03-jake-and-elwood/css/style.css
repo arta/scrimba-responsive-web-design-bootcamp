@@ -134,7 +134,7 @@ header { background: black; }
 .main-section-hero {
     background-image: url(../img/hero-bg.jpg);
     background-size: cover;
-    background-position-y: bottom;
+    background-position: bottom;
     color: white;
     padding: 8em 0 4em;
 }
