@@ -159,7 +159,7 @@ header { background: black; }
     cursor: pointer;
 }
 
-.btn-header-nav-close {
+.btn--header-nav-close {
     color: #ffe600;
     font-size: 3rem;
     font-weight: 700;
@@ -167,7 +167,7 @@ header { background: black; }
     position: absolute;
 }
 
-.btn-header-nav-open {
+.btn--header-nav-open {
     color: white;
     font-size: 2rem;
     margin-left: auto;
@@ -193,9 +193,9 @@ header { background: black; }
     width: 100vw;
 }
 
-/* a state class */
+/* a state (modifier) class */
 /* is added|removed in js/script.js */
-.header-nav-open { transform: translateX(-100vw); }
+.header-nav--open { transform: translateX(-100vw); }
 
 .header-nav-ul {
     align-items: center;
@@ -250,15 +250,15 @@ header { background: black; }
         margin-left: 2em;
     }
 
-    .btn-header-nav-close,
-    .btn-header-nav-open { display: none; }
+    .btn--header-nav-close,
+    .btn--header-nav-open { display: none; }
 
     .header-nav { position: static; }
 
     /* un-slide (now large screen) .header-nav back into viewport */
     /* upon resizing browser window up with small screen .header-nav open */
-    /* i.e., undo still active .header-nav-open { transform: translate(-100vw); } */
-    .header-nav-open { transform: translateX(0); }
+    /* i.e., undo still active .header-nav--open { transform: translate(-100vw); } */
+    .header-nav--open { transform: translateX(0); }
 
     .header-nav-ul {
         flex-direction: row;
