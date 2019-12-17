@@ -218,6 +218,8 @@ header { background: black; }
 /* MEDIA QUERIES */
 /* ------------- */
 
+@media (min-width: 400px) { .main-section-hero > * { margin-right: 20%; } }
+
 @media (min-width: 600px) {
 
     .main-section-hero > * { grid-column: 2 / span 2; }
