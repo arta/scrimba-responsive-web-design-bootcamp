@@ -182,16 +182,17 @@ header { background: black; }
     top: 0;
     right: 0;
     bottom: 0;
-    width: 100vw;
     /* shift to right, off of the canvas */
-    transform: translateX(100vw);
+    left: 100vw;
+    width: 100vw;
+    transform: translateX(0);
     /* transition close/open states smoothly */
     transition: transform 250ms;
 }
 
 /* a state class */
 /* is added|removed in js/script.js */
-.header-nav-open { transform: translateX(0); }
+.header-nav-open { transform: translateX(-100vw); }
 
 .header-nav-ul {
     align-items: center;
@@ -249,10 +250,7 @@ header { background: black; }
     .btn-header-nav-close,
     .btn-header-nav-open { display: none; }
 
-    .header-nav {
-        position: unset;
-        transform: translateX(0);
-    }
+    .header-nav { position: unset; }
 
     .header-nav-ul {
         flex-direction: row;
