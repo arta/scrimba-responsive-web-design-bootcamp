@@ -257,6 +257,11 @@ header { background: black; }
 
     .header-nav { position: unset; }
 
+    /* un-slide (now large screen) .header-nav back into viewport */
+    /* upon resizing browser window up with small screen .header-nav open */
+    /* i.e., undo still active .header-nav-open { transform: translate(-100vw); } */
+    .header-nav-open { transform: translateX(0); }
+
     .header-nav-ul {
         flex-direction: row;
         justify-content: flex-start;
