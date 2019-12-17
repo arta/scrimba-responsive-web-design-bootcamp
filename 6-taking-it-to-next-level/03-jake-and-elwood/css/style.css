@@ -37,6 +37,9 @@ h1,
 h2,
 strong { font-weight: 700; }
 
+h1,
+h2 { color: black; }
+
 .main-h1,
 .main-subtitle-p { text-align: center; }
 
@@ -45,13 +48,25 @@ strong { font-weight: 700; }
 .footer-p { margin-bottom: 4em; }
 
 .hero-h1 {
+    color: white;
     font-size: 1.5rem;
     line-height: 1.4;
 }
 
-.main-col-h2 {
-    color: black;
-    font-size: 1.25rem;
+.main-col-h2 { font-size: 1.25rem; }
+
+.main-h1 {
+    font-size: 3rem;
+    margin-bottom: .3em;
+}
+
+.main-h2 { font-size: 1.125; }
+
+.main-subtitle-p {
+    justify-self: center;
+    font-size: 1.125rem;
+    font-weight: bolder;
+    margin-bottom: 3em;
 }
 
 .span-accent { color: #ffe600; }
@@ -151,6 +166,7 @@ header { background: black; }
 .main-img {
     grid-column: 2 / span 1;
     justify-self: center;
+    margin-bottom: 4em;
 }
 
 /* ########## */
@@ -260,6 +276,11 @@ header { background: black; }
     .main-section-main {
         grid-column: 3 / -2;
         grid-row: 3;
+    }
+
+    .main-subtitle-p {
+        max-width: 640px;
+        width: 80%;
     }
 
     /* ------------- */
