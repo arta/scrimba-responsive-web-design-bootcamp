@@ -255,7 +255,7 @@ header { background: black; }
     .btn-header-nav-close,
     .btn-header-nav-open { display: none; }
 
-    .header-nav { position: unset; }
+    .header-nav { position: static; }
 
     /* un-slide (now large screen) .header-nav back into viewport */
     /* upon resizing browser window up with small screen .header-nav open */
