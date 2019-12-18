@@ -85,16 +85,8 @@ h2 { color: black; }
 
 .span-accent { color: #ffe600; }
 
-/* ---------- */
-
-.a-footer-social {
-    color: #000;
-    font-size: 1.75rem;
-    margin: 0 .5em;
-}
-
-.a-footer-social:hover { color: #777; }
-
+/* ########## */
+/* NAVIGATION */
 /* ---------- */
 
 .a-btn {
@@ -114,9 +106,13 @@ h2 { color: black; }
     margin-top: 1em;
 }
 
-/* ########## */
-/* NAVIGATION */
-/* ---------- */
+.a-footer-social {
+    color: #000;
+    font-size: 1.75rem;
+    margin: 0 .5em;
+}
+
+.a-footer-social:hover { color: #777; }
 
 .a-header-logo {
     background: #ffe600;
