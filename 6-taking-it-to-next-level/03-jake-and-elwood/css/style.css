@@ -40,12 +40,13 @@ strong { font-weight: 700; }
 h1,
 h2 { color: black; }
 
+.main-col-h2,
+.main-h2 { font-size: 1.125rem; }
+
 .main-h1,
 .main-subtitle-p { text-align: center; }
 
 /* ---------- */
-
-.footer-p { margin-bottom: 4em; }
 
 .hero-h1 {
     color: white;
@@ -53,14 +54,12 @@ h2 { color: black; }
     line-height: 1.4;
 }
 
-.main-col-h2 { font-size: 1.25rem; }
-
 .main-h1 {
     font-size: 3rem;
     margin-bottom: .3em;
 }
 
-.main-h2 { font-size: 1.125; }
+.footer-p { margin-bottom: 4em; }
 
 .main-subtitle-p {
     justify-self: center;
