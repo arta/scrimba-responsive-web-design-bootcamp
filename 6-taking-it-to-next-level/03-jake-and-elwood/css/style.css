@@ -103,74 +103,6 @@ h2 { color: black; }
     margin-top: 1em;
 }
 
-/* ###### */
-/* LAYOUT */
-/* ------ */
-
-footer,
-.main-about,
-.main-section-main-home { padding: 4em 0; }
-
-.header-container,
-.main-about > *,
-.main-section-hero > *,
-.main-section-main-home > * { grid-column: 2 / -2; }
-
-/* ------ */
-
-.base-grid {
-    display: grid;
-    grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
-}
-
-footer {
-    background: #ebebeb;
-    grid-template-areas:
-        ". social ."
-        ". main .";
-    text-align: center;
-}
-
-.footer-aside-social {
-    grid-area: social;
-    margin-bottom: 2em;
-}
-
-.footer-section-main {
-    grid-area: main;
-    opacity: .4;
-}
-
-header { background: black; }
-
-.header-home {
-    background: transparent;
-    position: absolute;
-    width: 100vw;
-}
-
-.main-col-home {
-    margin-top: 1.25em;
-    text-align: center;
-}
-
-.main-section-hero {
-    background-image: url(../img/hero-bg.jpg);
-    background-size: cover;
-    background-position: bottom;
-    color: white;
-    padding: 8em 0 4em;
-}
-
-/* ------ */
-
-.footer-img-logo { margin: 0 auto 1em; }
-
-.main-img {
-    justify-self: center;
-    margin-bottom: 4em;
-}
-
 /* ########## */
 /* NAVIGATION */
 /* ---------- */
@@ -242,6 +174,74 @@ header { background: black; }
     padding: 0;
 }
 
+/* ###### */
+/* LAYOUT */
+/* ------ */
+
+footer,
+.main-about,
+.main-section-main-home { padding: 4em 0; }
+
+.header-container,
+.main-about > *,
+.main-section-hero > *,
+.main-section-main-home > * { grid-column: 2 / -2; }
+
+/* ------ */
+
+.base-grid {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
+}
+
+footer {
+    background: #ebebeb;
+    grid-template-areas:
+        ". social ."
+        ". main .";
+    text-align: center;
+}
+
+.footer-aside-social {
+    grid-area: social;
+    margin-bottom: 2em;
+}
+
+.footer-section-main {
+    grid-area: main;
+    opacity: .4;
+}
+
+header { background: black; }
+
+.header-home {
+    background: transparent;
+    position: absolute;
+    width: 100vw;
+}
+
+.main-col-home {
+    margin-top: 1.25em;
+    text-align: center;
+}
+
+.main-section-hero {
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    padding: 8em 0 4em;
+}
+
+/* ------ */
+
+.footer-img-logo { margin: 0 auto 1em; }
+
+.main-img {
+    justify-self: center;
+    margin-bottom: 4em;
+}
+
 /* ############# */
 /* MEDIA QUERIES */
 /* ------------- */
@@ -249,6 +249,36 @@ header { background: black; }
 @media (min-width: 400px) { .main-section-hero > * { margin-right: 20%; } }
 
 @media (min-width: 600px) {
+
+    .a-header-nav {
+        font-size: 1rem;
+        margin-left: 2em;
+    }
+
+    .btn--header-nav-close,
+    .btn--header-nav-open { display: none; }
+
+    /* completely clear/undo .header-nav */
+    /* mobile 1st (small screen) styling */
+    /* (i.e. positioning & sizing) */
+    .header-nav {
+        position: unset;
+        width: unset;
+    }
+
+    .header-nav--home { background: transparent; }
+
+    /* un-slide (now large screen) .header-nav back into viewport */
+    /* upon resizing browser window up with small screen .header-nav open */
+    /* i.e., undo still active .header-nav--open { transform: translate(-100vw); } */
+    .header-nav--open { transform: translateX(0); }
+
+    .header-nav-ul {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    /* ------------- */
 
     .main-section-hero > * { grid-column: 2 / span 2; }
 
@@ -287,34 +317,4 @@ header { background: black; }
     /* ------------- */
 
     .footer-img-logo { margin-left: 0 }
-
-    /* ------------- */
-
-    .a-header-nav {
-        font-size: 1rem;
-        margin-left: 2em;
-    }
-
-    .btn--header-nav-close,
-    .btn--header-nav-open { display: none; }
-
-    /* completely clear/undo .header-nav */
-    /* mobile 1st (small screen) styling */
-    /* (i.e. positioning & sizing) */
-    .header-nav {
-        position: unset;
-        width: unset;
-    }
-
-    .header-nav--home { background: transparent; }
-
-    /* un-slide (now large screen) .header-nav back into viewport */
-    /* upon resizing browser window up with small screen .header-nav open */
-    /* i.e., undo still active .header-nav--open { transform: translate(-100vw); } */
-    .header-nav--open { transform: translateX(0); }
-
-    .header-nav-ul {
-        flex-direction: row;
-        justify-content: flex-start;
-    }
 }
