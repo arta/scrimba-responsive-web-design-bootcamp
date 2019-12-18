@@ -40,9 +40,6 @@ strong { font-weight: 700; }
 h1,
 h2 { color: black; }
 
-.main-h1,
-.main-subtitle-p { text-align: center; }
-
 /* ---------- */
 
 .hero-h1 {
@@ -53,7 +50,8 @@ h2 { color: black; }
 
 .main-h1 {
     font-size: 3rem;
-    margin-bottom: .3em;
+    margin-bottom: .8em;
+    justify-self: center;
 }
 
 .main-h1::after {
@@ -61,6 +59,9 @@ h2 { color: black; }
     content: "";
     display: block;
     height: 30px;
+    margin-left: 10px;
+    margin-top: -40px;
+    width: 100%;
 }
 
 .main-h2 { font-size: 1.125rem; }
@@ -86,6 +87,7 @@ h2 { color: black; }
     font-size: 1.125rem;
     font-weight: bolder;
     margin-bottom: 3em;
+    text-align: center;
 }
 
 /* ---------- */
