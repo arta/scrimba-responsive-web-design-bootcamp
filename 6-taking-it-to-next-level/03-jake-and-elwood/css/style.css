@@ -43,9 +43,6 @@ h2 { color: black; }
 .main-h1,
 .main-subtitle-p { text-align: center; }
 
-.main-col-h2,
-.main-h2 { font-size: 1.125rem; }
-
 /* ---------- */
 
 .hero-h1 {
@@ -57,6 +54,20 @@ h2 { color: black; }
 .main-h1 {
     font-size: 3rem;
     margin-bottom: .3em;
+}
+
+.main-h2 { font-size: 1.125rem; }
+
+.main-h2::after {
+    background: #ffe600;
+    content: '';
+    display: block;
+    height: 3px; width: 60px;
+    margin-top: 10px;
+}
+
+.main-h2--home::after {
+    margin-left: auto; margin-right: auto;
 }
 
 /* ---------- */
