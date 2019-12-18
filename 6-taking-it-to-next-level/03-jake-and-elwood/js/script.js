@@ -1,11 +1,16 @@
-const btnHeaderNavClose = document.querySelector('.btn--header-nav-close');
-const btnHeaderNavOpen = document.querySelector('.btn--header-nav-open');
+// Verb, if present, first to:
+// prompt action
+// distinguish from a state (class) name
+
+const btnOpenHeaderNav = document.querySelector('.btn--open-header-nav');
+const btnCloseHeaderNav = document.querySelector('.btn--close-header-nav');
 const headerNav = document.querySelector('.header-nav');
 
-btnHeaderNavClose.addEventListener('click', () => {
+btnOpenHeaderNav.addEventListener('click', () => {
+    headerNav.classList.add('header-nav--open');
+});
+
+btnCloseHeaderNav.addEventListener('click', () => {
     headerNav.classList.remove('header-nav--open');
 });
 
-btnHeaderNavOpen.addEventListener('click', () => {
-    headerNav.classList.add('header-nav--open');
-});

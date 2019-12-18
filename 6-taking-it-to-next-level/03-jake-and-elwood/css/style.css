@@ -136,7 +136,10 @@ h2 { color: black; }
     cursor: pointer;
 }
 
-.btn--header-nav-close {
+/* Verb, if present, first to: */
+/* prompt action */
+/* distinguish from a state (class) name */
+.btn--close-header-nav {
     color: #ffe600;
     font-size: 3rem;
     font-weight: 700;
@@ -144,7 +147,7 @@ h2 { color: black; }
     position: absolute;
 }
 
-.btn--header-nav-open {
+.btn--open-header-nav {
     color: white;
     font-size: 2rem;
     margin-left: auto;
@@ -268,8 +271,8 @@ header { background: black; }
         margin-left: 2em;
     }
 
-    .btn--header-nav-close,
-    .btn--header-nav-open { display: none; }
+    .btn--close-header-nav,
+    .btn--open-header-nav { display: none; }
 
     /* completely clear/undo .header-nav */
     /* mobile 1st (small screen) styling */
