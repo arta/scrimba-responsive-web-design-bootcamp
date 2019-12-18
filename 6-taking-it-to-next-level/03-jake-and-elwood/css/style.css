@@ -56,6 +56,13 @@ h2 { color: black; }
     margin-bottom: .3em;
 }
 
+.main-h1::after {
+    background: #ffe600;
+    content: "";
+    display: block;
+    height: 30px;
+}
+
 .main-h2 { font-size: 1.125rem; }
 
 .main-h2::after {
