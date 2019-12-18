@@ -164,7 +164,6 @@ header { background: black; }
 .footer-img-logo { margin: 0 auto 1em; }
 
 .main-img {
-    grid-column: 2 / span 1;
     justify-self: center;
     margin-bottom: 4em;
 }
@@ -271,12 +270,11 @@ header { background: black; }
 
     .main-col-home:first-child { grid-column: 2; }
 
+    .main-img { grid-column: 2; }
+
     .main-section-hero { padding: 8em 0 6em; }
 
-    .main-section-main {
-        grid-column: 3 / -2;
-        grid-row: 3;
-    }
+    .main-section-main { grid-column: 3 / -2; }
 
     .main-subtitle-p {
         max-width: 640px;
