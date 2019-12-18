@@ -220,7 +220,7 @@ header { background: black; }
     /* transition close/open states smoothly */
     transition: transform 250ms;
     /* prevent shrinking when shifted to the right */
-    width: 100%;
+    width: 100vw;
 }
 
 /* a state (modifier) class */
@@ -294,7 +294,10 @@ header { background: black; }
     .btn--header-nav-close,
     .btn--header-nav-open { display: none; }
 
-    .header-nav { position: static; }
+    .header-nav {
+        position: unset;
+        width: unset;
+    }
 
     .header-nav--home { background: transparent; }
 
