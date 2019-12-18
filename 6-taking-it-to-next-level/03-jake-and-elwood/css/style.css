@@ -238,6 +238,7 @@ header { background: black; }
 .footer-img-logo { margin: 0 auto 1em; }
 
 .main-img {
+    box-shadow: 6px 6px black;
     justify-self: center;
     margin-bottom: 4em;
 }
