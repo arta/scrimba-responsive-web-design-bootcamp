@@ -220,7 +220,7 @@ header { background: black; }
     /* transition close/open states smoothly */
     transition: transform 250ms;
     /* prevent shrinking when shifted to the right */
-    width: 100vw;
+    width: 100%;
 }
 
 /* a state (modifier) class */
