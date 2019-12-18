@@ -40,11 +40,11 @@ strong { font-weight: 700; }
 h1,
 h2 { color: black; }
 
-.main-col-h2,
-.main-h2 { font-size: 1.125rem; }
-
 .main-h1,
 .main-subtitle-p { text-align: center; }
+
+.main-col-h2,
+.main-h2 { font-size: 1.125rem; }
 
 /* ---------- */
 
@@ -59,6 +59,8 @@ h2 { color: black; }
     margin-bottom: .3em;
 }
 
+/* ---------- */
+
 .footer-p { margin-bottom: 4em; }
 
 .main-subtitle-p {
@@ -67,6 +69,8 @@ h2 { color: black; }
     font-weight: bolder;
     margin-bottom: 3em;
 }
+
+/* ---------- */
 
 .span-accent { color: #ffe600; }
 
@@ -294,6 +298,9 @@ header { background: black; }
     .btn--header-nav-close,
     .btn--header-nav-open { display: none; }
 
+    /* completely clear/undo .header-nav */
+    /* mobile 1st (small screen) styling */
+    /* (i.e. positioning & sizing) */
     .header-nav {
         position: unset;
         width: unset;
