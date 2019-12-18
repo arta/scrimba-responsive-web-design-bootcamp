@@ -104,12 +104,12 @@ h2 { color: black; }
     text-decoration: none;
 }
 
-.a-btn-primary {
+.a-btn--primary {
     background: #ffe600;
     color: black;
 }
 
-.a-btn-hero {
+.a-btn--hero {
     justify-self: start;
     margin-top: 1em;
 }
