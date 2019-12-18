@@ -75,7 +75,8 @@ h2 { color: black; }
 }
 
 .main-h2--home::after {
-    margin-left: auto; margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ---------- */
