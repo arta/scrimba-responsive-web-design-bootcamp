@@ -374,14 +374,14 @@ label {
 
     .main-aside { order: 1; }
 
-    .main-section-hero { padding: 8em 0 6em; }
-
     .main-section { grid-column: 3 / -2; }
 
     .main-section--form {
         grid-row: span 2;
         margin-left: 2em;
     }
+
+    .main-section-hero { padding: 8em 0 6em; }
 
     .main-subtitle-p {
         max-width: 640px;
