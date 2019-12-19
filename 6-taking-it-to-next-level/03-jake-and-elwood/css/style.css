@@ -200,12 +200,12 @@ h2 { color: black; }
 
 footer,
 .main-template,
-.main-section-main-home { padding: 4em 0; }
+.main-section-primary-home { padding: 4em 0; }
 
 .header-container,
 .main-template > *,
 .main-section-hero > *,
-.main-section-main-home > * { grid-column: 2 / -2; }
+.main-section-primary-home > * { grid-column: 2 / -2; }
 
 /* ------ */
 
@@ -353,7 +353,7 @@ label {
 
     .main-section-hero > * { grid-column: 2 / span 2; }
 
-    .main-section-main-home > * { grid-column: span 1; }
+    .main-section-primary-home > * { grid-column: span 1; }
 
     /* ------------- */
 
@@ -374,9 +374,9 @@ label {
 
     .main-section-hero { padding: 8em 0 6em; }
 
-    .main-section-main { grid-column: 3 / -2; }
+    .main-section-primary { grid-column: 3 / -2; }
 
-    .main-section-main--contact {
+    .main-section-primary--contact {
         grid-row: 3 / span 2;
         margin-left: 2em;
     }
