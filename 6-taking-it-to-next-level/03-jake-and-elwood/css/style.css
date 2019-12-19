@@ -347,6 +347,10 @@ label {
 
     /* ------------- */
 
+    .main-aside-contact-prompt,
+    .main-col-home:first-child,
+    .main-img { grid-column: 2; }
+
     .main-section-hero > * { grid-column: 2 / span 2; }
 
     .main-section-main-home > * { grid-column: span 1; }
@@ -368,10 +372,6 @@ label {
 
     .footer-section-main { text-align: left; }
 
-    .main-aside-contact-prompt { grid-column: 2; }
-
-    .main-col-home:first-child { grid-column: 2; }
-
     .main-section-hero { padding: 8em 0 6em; }
 
     .main-section-main { grid-column: 3 / -2; }
@@ -389,8 +389,6 @@ label {
     /* ------------- */
 
     .footer-img-logo { margin-left: 0 }
-
-    .main-img { grid-column: 2; }
 
     /* ------------- */
 
