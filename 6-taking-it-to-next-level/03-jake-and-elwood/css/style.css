@@ -394,17 +394,9 @@ label {
     /* override min-width given by browsers */
     input { width: 100%; }
 
-    .label-first-name   { order: 0; } /* redundant; include for visual clarity */
+    .label-first-name   { grid-row: 1; }
 
-    .label-last-name    { order: 1; }
+    .input-first-name   { grid-column: 1; }
 
-    .input-first-name   { order: 2; }
-
-    .input-last-name    { order: 3; }
-
-    .label-message      { order: 4; }
-
-    .textarea-message   { order: 5; }
-
-    .btn--submit        { order: 6; }
+    .label-last-name    { grid-row: 1; }
 }
