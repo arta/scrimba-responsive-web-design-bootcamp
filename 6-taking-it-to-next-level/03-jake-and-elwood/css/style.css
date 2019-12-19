@@ -130,7 +130,6 @@ h2 { color: black; }
     background: 0;
     border: 0;
     cursor: pointer;
-    margin-top: 1em;
 }
 
 /* Verb, if present, first to: */
@@ -157,6 +156,7 @@ h2 { color: black; }
     background: #ffe600;
     color: black;
     font-weight: 700;
+    margin-top: 1em;
     padding: .5em 1.75em;
 }
 
