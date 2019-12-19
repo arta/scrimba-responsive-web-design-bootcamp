@@ -381,8 +381,30 @@ label {
 
     /* ------------- */
 
+    .label-message,
+    .textarea-message,
+    .btn--submit { grid-column: span 2; }
+
     .form-contact {
         grid-template-columns: 1fr 1fr;
         column-gap: 2em;
     }
+
+    /* Remember this GOTCHA: */
+    /* override min-width given by browsers */
+    input { width: 100%; }
+
+    .label-first-name   { order: 0; } /* redundant; include for visual clarity */
+
+    .label-last-name    { order: 1; }
+
+    .input-first-name   { order: 2; }
+
+    .input-last-name    { order: 3; }
+
+    .label-message      { order: 4; }
+
+    .textarea-message   { order: 5; }
+
+    .btn--submit        { order: 6; }
 }
