@@ -378,7 +378,7 @@ label {
 
     .main-section { grid-column: 3 / -2; }
 
-    .main-section--contact {
+    .main-section--form {
         grid-row: span 2;
         margin-left: 2em;
     }
