@@ -199,11 +199,11 @@ h2 { color: black; }
 /* ------ */
 
 footer,
-.main-about,
+.main-template,
 .main-section-main-home { padding: 4em 0; }
 
 .header-container,
-.main-about > *,
+.main-template > *,
 .main-section-hero > *,
 .main-section-main-home > * { grid-column: 2 / -2; }
 
@@ -262,6 +262,51 @@ header { background: black; }
     box-shadow: 5px 5px black, 10px 10px #ffe600;
     justify-self: center;
     margin-bottom: 4em;
+}
+
+.main-img--contact { margin: 0 auto 2em; }
+
+/* ##### */
+/* FORMS */
+/* ----- */
+
+input,
+label,
+textarea {
+    color: #404040;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    width: 100%;
+}
+
+input,
+textarea {
+    border: 1px solid #777;
+    border-radius: 1px;
+    font-size: 1rem;
+    padding: 2px 6px;
+}
+
+label {
+    color: black;
+    font-size: 1.125rem;
+    margin-bottom: .25em;
+}
+
+.btn--submit-form {
+    background: #ffe600;
+    color: black;
+    font-size: .875rem;
+    font-weight: 700;
+    margin-top: 1em;
+    padding: .75em 3em;
+    justify-self: end;
+}
+
+.form-contact {
+    display: grid;
+    gap: 1em 2em;
 }
 
 /* ############# */
@@ -323,13 +368,18 @@ header { background: black; }
 
     .footer-section-main { text-align: left; }
 
-    .main-col-home:first-child { grid-column: 2; }
+    .main-aside-contact-prompt { grid-column: 2; }
 
-    .main-img { grid-column: 2; }
+    .main-col-home:first-child { grid-column: 2; }
 
     .main-section-hero { padding: 8em 0 6em; }
 
     .main-section-main { grid-column: 3 / -2; }
+
+    .main-section-main--contact {
+        grid-row: 3 / span 2;
+        margin-left: 2em;
+    }
 
     .main-subtitle-p {
         max-width: 640px;
@@ -339,4 +389,20 @@ header { background: black; }
     /* ------------- */
 
     .footer-img-logo { margin-left: 0 }
+
+    .main-img { grid-column: 2; }
+
+    /* ------------- */
+
+    .btn--submit-form {
+        grid-column: 2;
+        justify-self: end;
+    }
+
+    .field--message { grid-column: span 2; }
+
+    .form-contact {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+    }
 }
