@@ -200,12 +200,12 @@ h2 { color: black; }
 
 footer,
 .main-template,
-.main-section-primary-home { padding: 4em 0; }
+.main-section-home { padding: 4em 0; }
 
 .header-container,
 .main-template > *,
 .main-section-hero > *,
-.main-section-primary-home > * { grid-column: 2 / -2; }
+.main-section-home > * { grid-column: 2 / -2; }
 
 /* ------ */
 
@@ -353,7 +353,7 @@ label {
 
     .main-section-hero > * { grid-column: 2 / span 2; }
 
-    .main-section-primary-home > * { grid-column: span 1; }
+    .main-section-home > * { grid-column: span 1; }
 
     /* ------------- */
 
@@ -376,9 +376,9 @@ label {
 
     .main-section-hero { padding: 8em 0 6em; }
 
-    .main-section-primary { grid-column: 3 / -2; }
+    .main-section { grid-column: 3 / -2; }
 
-    .main-section-primary--contact {
+    .main-section--contact {
         grid-row: span 2;
         margin-left: 2em;
     }
