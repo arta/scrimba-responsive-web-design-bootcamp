@@ -99,23 +99,6 @@ h2 { color: black; }
 /* NAVIGATION */
 /* ---------- */
 
-.a-btn {
-    display: inline-block;
-    font-weight: 700;
-    padding: .5em 1.75em;
-    text-decoration: none;
-}
-
-.a-btn--primary {
-    background: #ffe600;
-    color: black;
-}
-
-.a-btn--hero {
-    justify-self: start;
-    margin-top: 1em;
-}
-
 .a-footer-social {
     color: #000;
     font-size: 1.75rem;
@@ -136,10 +119,18 @@ h2 { color: black; }
     font-weight: 700;
 }
 
+/* ---------- */
+
+.a-btn {
+    display: inline-block;
+    text-decoration: none;
+}
+
 .btn {
     background: 0;
     border: 0;
     cursor: pointer;
+    margin-top: 1em;
 }
 
 /* Verb, if present, first to: */
@@ -153,11 +144,26 @@ h2 { color: black; }
     position: absolute;
 }
 
+.btn--hero { justify-self: start; }
+
 .btn--open-header-nav {
     color: white;
     font-size: 2rem;
     margin-left: auto;
     padding: 0;
+}
+
+.btn--primary {
+    background: #ffe600;
+    color: black;
+    font-weight: 700;
+    padding: .5em 1.75em;
+}
+
+.btn--submit {
+    font-size: .875rem;
+    padding: .75em 3em;
+    justify-self: end;
 }
 
 .header-container {
@@ -288,16 +294,6 @@ label {
     margin-bottom: .25em;
 }
 
-.btn--submit-form {
-    background: #ffe600;
-    color: black;
-    font-size: .875rem;
-    font-weight: 700;
-    margin-top: 1em;
-    padding: .75em 3em;
-    justify-self: end;
-}
-
 .form-contact { display: grid; }
 
 /* ############# */
@@ -385,7 +381,7 @@ label {
 
     /* ------------- */
 
-    .btn--submit-form {
+    .btn--submit {
         grid-column: 2;
         justify-self: end;
     }
