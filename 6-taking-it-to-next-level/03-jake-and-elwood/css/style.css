@@ -347,7 +347,7 @@ label {
 
     /* ------------- */
 
-    .main-aside-contact,
+    .main-aside,
     .main-col-home:first-child,
     .main-img { grid-column: 2; }
 
@@ -372,7 +372,7 @@ label {
 
     .footer-section-main { text-align: left; }
 
-    .main-aside-contact { order: 1; }
+    .main-aside { order: 1; }
 
     .main-section-hero { padding: 8em 0 6em; }
 
