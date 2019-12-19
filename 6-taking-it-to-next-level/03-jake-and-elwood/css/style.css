@@ -163,7 +163,7 @@ h2 { color: black; }
 .btn--submit {
     font-size: .875rem;
     padding: .75em 3em;
-    justify-self: end;
+    margin-left: auto;
 }
 
 .header-container {
