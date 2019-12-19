@@ -347,7 +347,7 @@ label {
 
     /* ------------- */
 
-    .main-aside-contact-prompt,
+    .main-aside-contact,
     .main-col-home:first-child,
     .main-img { grid-column: 2; }
 
