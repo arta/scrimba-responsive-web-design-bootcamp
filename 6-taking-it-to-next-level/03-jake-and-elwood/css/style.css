@@ -271,26 +271,20 @@ header { background: black; }
 /* ----- */
 
 input,
-label,
-textarea {
-    color: #404040;
-    display: block;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    width: 100%;
-}
-
-input,
 textarea {
     border: 1px solid #777;
     border-radius: 1px;
-    font-size: 1rem;
-    padding: 2px 6px;
+    color: #404040;
+    font-family: inherit;
+    font-size: inherit;
+    margin-bottom: .5em;
+    padding: .5em;
 }
 
 label {
     color: black;
     font-size: 1.125rem;
+    line-height: 1.6;
     margin-bottom: .25em;
 }
 
@@ -304,10 +298,7 @@ label {
     justify-self: end;
 }
 
-.form-contact {
-    display: grid;
-    gap: 1em 2em;
-}
+.form-contact { display: grid; }
 
 /* ############# */
 /* MEDIA QUERIES */
