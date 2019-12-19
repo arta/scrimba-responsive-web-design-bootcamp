@@ -381,13 +381,6 @@ label {
 
     /* ------------- */
 
-    .btn--submit {
-        grid-column: 2;
-        justify-self: end;
-    }
-
-    .field--message { grid-column: span 2; }
-
     .form-contact {
         grid-template-columns: 1fr 1fr;
         column-gap: 2em;
