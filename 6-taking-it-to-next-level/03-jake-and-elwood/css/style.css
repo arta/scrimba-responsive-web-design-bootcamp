@@ -372,12 +372,14 @@ label {
 
     .footer-section-main { text-align: left; }
 
+    .main-aside-contact { order: 1; }
+
     .main-section-hero { padding: 8em 0 6em; }
 
     .main-section-primary { grid-column: 3 / -2; }
 
     .main-section-primary--contact {
-        grid-row: 3 / span 2;
+        grid-row: span 2;
         margin-left: 2em;
     }
 
