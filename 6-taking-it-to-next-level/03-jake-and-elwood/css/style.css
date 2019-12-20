@@ -38,12 +38,13 @@ h2,
 strong { font-weight: 700; }
 
 h1,
-h2 { color: black; }
+h2,
+.main-subtitle-p { color: black; }
 
 /* ---------- */
 
 .hero-h1 {
-    color: white;
+    color: inherit;
     font-size: 1.5rem;
     line-height: 1.4;
 }
@@ -83,10 +84,12 @@ h2 { color: black; }
 
 .footer-p { margin-bottom: 4em; }
 
+.hero-subtitle-p,
+.main-subtitle-p { font-size: 1.125rem; }
+
 .main-subtitle-p {
-    justify-self: center;
-    font-size: 1.125rem;
     font-weight: bolder;
+    justify-self: center;
     margin-bottom: 3em;
     text-align: center;
 }
