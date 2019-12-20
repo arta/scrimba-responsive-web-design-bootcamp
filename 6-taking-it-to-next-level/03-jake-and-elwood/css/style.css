@@ -20,6 +20,20 @@ body {
     line-height: 1.6;
 }
 
+/* --- Stretch pages across viewport's entire height --- */
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+header      { grid-row: 1; }
+main        { align-self: start; }
+/* deal with .header-home absolute position */
+.main-home  { grid-row: 1 / span 2; }
+
+/* ------ */
+
 img {
     display: block;
     max-width: 100%;
