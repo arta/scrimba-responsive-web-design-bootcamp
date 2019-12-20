@@ -140,6 +140,21 @@ h2,
     cursor: pointer;
 }
 
+.a-btn,
+.btn {
+    transition: transform 250ms;
+}
+
+.a-btn:focus,
+.a-btn:hover,
+.btn:focus,
+.btn:hover {
+    /* https://coderwall.com/p/gmpjzg/prevent-flickering-on-css3-transitions-transforms-in-webkit */
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    transform: scale(1.06);
+}
+
 /* Verb, if present, first to: */
 /* prompt action */
 /* distinguish from a state (class) name */
