@@ -394,9 +394,16 @@ label {
     /* override min-width given by browsers */
     input { width: 100%; }
 
-    .label-first-name   { grid-row: 1; }
+    .label-last-name    { grid-row: 1; grid-column: 2; }
 
     .input-first-name   { grid-column: 1; }
 
-    .label-last-name    { grid-row: 1; }
+    /* Same as: */
+    /* (leaving here for reference) */
+
+    /* .label-first-name   { grid-row: 1; } */
+
+    /* .input-first-name   { grid-column: 1; } */
+
+    /* .label-last-name    { grid-row: 1; } */
 }
