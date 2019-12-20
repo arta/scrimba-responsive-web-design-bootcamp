@@ -387,6 +387,7 @@ label {
 
     .form-contact {
         grid-template-columns: 1fr 1fr;
+        grid-auto-flow: dense;
         column-gap: 2em;
     }
 
@@ -394,7 +395,8 @@ label {
     /* override min-width given by browsers */
     input { width: 100%; }
 
-    .label-last-name    { grid-row: 1; grid-column: 2; }
+    /* replaced with `grid-auto-flow: dense;` */
+    /* .label-last-name    { grid-row: 1; grid-column: 2; } */
 
     .input-first-name   { grid-column: 1; }
 
