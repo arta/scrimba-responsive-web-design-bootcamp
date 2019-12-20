@@ -27,7 +27,6 @@ body {
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
 }
-header      { grid-row: 1; }
 main        { align-self: start; }
 /* deal with .header-home absolute position */
 .main-home  { grid-row: 1 / span 2; }
