@@ -122,6 +122,11 @@ h2,
     font-weight: 700;
 }
 
+.a-header-nav.current {
+    border-bottom: 2px solid #ffe600;
+    padding-bottom: .25em;
+}
+
 /* ---------- */
 
 .a-btn {
