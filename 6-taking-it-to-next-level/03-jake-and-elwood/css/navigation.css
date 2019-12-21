@@ -1,0 +1,113 @@
+/* ########## */
+/* NAVIGATION */
+/* ---------- */
+
+.header-nav-ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- */
+
+.a-header-nav {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.a-header-nav.current {
+    border-bottom: 2px solid #ffe600;
+    padding-bottom: .25em;
+}
+
+/* ---------- */
+
+/* Verb, if present, first to: */
+/* prompt action */
+/* distinguish from a state (class) name */
+.btn--close-header-nav {
+    color: #ffe600;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: .5em;
+    position: absolute;
+}
+
+.btn--open-header-nav {
+    color: white;
+    font-size: 2rem;
+    margin-left: auto;
+    padding: 0;
+}
+
+/* ---------- */
+
+.header-container {
+    /* align items center is a hack for Safari */
+    /* prevent small screen nav content */
+    /* vertical shifting out of the screen top */
+    align-items: center;
+    display: flex;
+}
+
+.header-nav {
+    background: black;
+    /* left:value shifts this to right, off of the canvas */
+    position: fixed; top: 0; bottom: 0; left: 100vw;
+    transform: translateX(0);
+    /* transition close/open states smoothly */
+    transition: transform 250ms;
+    /* prevent shrinking when shifted to the right */
+    width: 100vw;
+}
+
+/* a state (modifier) class */
+/* is added|removed in js/script.js */
+.header-nav--open { transform: translateX(-100vw); }
+
+/* ------------- */
+
+@media (min-width: 600px) {
+
+    .header-nav-ul {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    /* ------------- */
+
+    .a-header-nav {
+        font-size: 1rem;
+        margin-left: 2em;
+    }
+
+    /* ------------- */
+
+    .btn--close-header-nav,
+    .btn--open-header-nav { display: none; }
+
+    /* ------------- */
+
+    /* completely clear/undo .header-nav */
+    /* mobile 1st (small screen) styling */
+    /* (i.e. positioning & sizing) */
+    .header-nav {
+        position: unset;
+        width: unset;
+    }
+
+    /* do not obscure hero background image */
+    .header-nav--home { background: transparent; }
+
+    /* un-slide (now large screen) .header-nav back into viewport */
+    /* upon resizing browser window up with small screen .header-nav open */
+    /* i.e., undo still active .header-nav--open { transform: translate(-100vw); } */
+    .header-nav--open { transform: translateX(0); }
+}

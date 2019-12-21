@@ -1,0 +1,30 @@
+/* ###### */
+/* IMAGES */
+/* ------ */
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ------ */
+
+.footer-img-logo { margin: 0 auto 1em; }
+
+.main-img {
+    box-shadow: 5px 5px black, 10px 10px #ffe600;
+    justify-self: center;
+    margin-bottom: 4em;
+}
+
+.main-img--contact { margin: 0 auto 2em; }
+
+/* ------------- */
+
+@media (min-width: 600px) {
+
+    .footer-img-logo { margin-left: 0 }
+
+    .main-img { grid-column: 2; }
+
+}

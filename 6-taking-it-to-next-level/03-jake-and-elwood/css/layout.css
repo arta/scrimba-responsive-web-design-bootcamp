@@ -1,0 +1,146 @@
+/* ###### */
+/* LAYOUT */
+/* ------ */
+
+* {
+   /* border: 1px dotted hotpink; */
+   box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #404040;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* --- Stretch pages across viewport's height --- */
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+main { align-self: start; }
+
+/* deal with .header-home absolute position */
+.main-home { grid-row: 1 / span 2; }
+
+/* ---------------------------------------------- */
+
+footer,
+.main-template,
+.main-section-home { padding: 4em 0; }
+
+.header-container,
+.main-template > *,
+.main-section-hero > *,
+.main-section-home > * { grid-column: 2 / -2; }
+
+/* ------ */
+
+footer {
+    background: #ebebeb;
+    grid-template-areas:
+        ". social ."
+        ". main .";
+    text-align: center;
+}
+
+header { background: black; }
+
+/* ------ */
+
+.base-grid {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
+}
+
+.footer-aside-social {
+    grid-area: social;
+    margin-bottom: 2em;
+    white-space: nowrap;
+}
+
+.footer-section-main {
+    grid-area: main;
+    opacity: .4;
+}
+
+/* Make hero slide up under the header (with navigation) */
+/* just for the esthetic effect */
+.header-home {
+    background: transparent;
+    position: absolute;
+    /* absolute|fixed position removes block's default 100% width */
+    /* the element is now sized to fit its content */
+    /* if 100% width required, must be declared */
+    /* most often required to match other block elements */
+    width: 100vw;
+}
+
+.main-col-home {
+    margin-top: 1.25em;
+    text-align: center;
+}
+
+.main-section-hero {
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    padding: 8em 0 4em;
+}
+
+/* ------------- */
+
+@media (min-width: 400px) {
+
+    .main-section-hero > * { margin-right: 20%; }
+
+}
+
+/* ------------- */
+
+@media (min-width: 600px) {
+
+    .main-aside,
+    .main-col-home:first-child { grid-column: 2; }
+
+    .main-section-hero > * { grid-column: 2 / span 2; }
+
+    .main-section-home > * { grid-column: span 1; }
+
+    /* ------------- */
+
+    footer { grid-template-areas: ". main main social ."; }
+
+    /* ------------- */
+
+    .base-grid {
+        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(150px, 320px)) minmax(1em, 1fr);
+        column-gap: 2em;
+    }
+
+    .footer-aside-social {
+        align-self: center;
+        margin-bottom: unset;
+        text-align: right;
+    }
+
+    .footer-section-main { text-align: left; }
+
+    .main-aside { order: 1; }
+
+    .main-section { grid-column: 3 / -2; }
+
+    .main-section-hero { padding: 8em 0 6em; }
+
+}
