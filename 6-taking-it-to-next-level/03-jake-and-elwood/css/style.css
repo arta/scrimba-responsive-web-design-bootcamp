@@ -374,6 +374,9 @@ label {
     .main-col-home:first-child,
     .main-img { grid-column: 2; }
 
+    .form-contact,
+    .main-section { grid-column: 3 / -2; }
+
     .main-section-hero > * { grid-column: 2 / span 2; }
 
     .main-section-home > * { grid-column: span 1; }
@@ -397,13 +400,6 @@ label {
 
     .main-aside { order: 1; }
 
-    .main-section { grid-column: 3 / -2; }
-
-    .main-section--form {
-        grid-row: span 2;
-        margin-left: 2em;
-    }
-
     .main-section-hero { padding: 8em 0 6em; }
 
     .main-subtitle-p {
@@ -422,8 +418,10 @@ label {
     .btn--submit { grid-column: span 2; }
 
     .form-contact {
+        align-self: start;
         column-gap: 2em;
         grid-auto-flow: dense;
+        grid-row: span 2;
         grid-template-columns: 1fr 1fr;
     }
 
