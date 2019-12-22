@@ -28,6 +28,14 @@ label {
 
 /* ------------- */
 
+.btn--submit {
+    font-size: .875rem;
+    padding: .75em 3em;
+    margin-left: auto;
+}
+
+/* ------------- */
+
 @media (min-width: 600px) {
 
     .label-message,
