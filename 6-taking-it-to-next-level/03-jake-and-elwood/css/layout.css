@@ -63,13 +63,13 @@ header { background: black; }
     grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
 }
 
-.footer-aside-social {
+.footer-aside {
     grid-area: social;
     margin-bottom: 2em;
     white-space: nowrap;
 }
 
-.footer-section-main {
+.footer-section {
     grid-area: main;
     opacity: .4;
 }
@@ -129,13 +129,13 @@ header { background: black; }
         column-gap: 2em;
     }
 
-    .footer-aside-social {
+    .footer-aside {
         align-self: center;
         margin-bottom: unset;
         text-align: right;
     }
 
-    .footer-section-main { text-align: left; }
+    .footer-section { text-align: left; }
 
     .main-aside { order: 1; }
 
