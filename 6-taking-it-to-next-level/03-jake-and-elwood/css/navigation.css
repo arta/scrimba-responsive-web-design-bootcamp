@@ -104,7 +104,7 @@
     }
 
     /* do not obscure hero background image */
-    .header-nav--home { background: transparent; }
+    .header-nav--home-pg { background: transparent; }
 
     /* un-slide (now large screen) .header-nav back into viewport */
     /* upon resizing browser window up with small screen .header-nav open */

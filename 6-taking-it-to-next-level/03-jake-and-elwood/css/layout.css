@@ -30,19 +30,19 @@ body {
 
 main { align-self: start; }
 
-/* deal with .header-home absolute position */
-.main-home { grid-row: 1 / span 2; }
+/* deal with .header-home-pg absolute position */
+.main-home-pg { grid-row: 1 / span 2; }
 
 /* ---------------------------------------------- */
 
 footer,
 .main-template,
-.main-section-home { padding: 4em 0; }
+.main-section-home-pg { padding: 4em 0; }
 
 .header-container,
 .main-template > *,
 .main-section-hero > *,
-.main-section-home > * { grid-column: 2 / -2; }
+.main-section-home-pg > * { grid-column: 2 / -2; }
 
 /* ------ */
 
@@ -76,7 +76,7 @@ header { background: black; }
 
 /* Make hero slide up under the header (with navigation) */
 /* just for the esthetic effect */
-.header-home {
+.header-home-pg {
     background: transparent;
     position: absolute;
     /* absolute|fixed position removes block's default 100% width */
@@ -86,7 +86,7 @@ header { background: black; }
     width: 100vw;
 }
 
-.main-col-home {
+.main-col-home-pg {
     margin-top: 1.25em;
     text-align: center;
 }
@@ -112,11 +112,11 @@ header { background: black; }
 @media (min-width: 600px) {
 
     .main-aside,
-    .main-col-home:first-child { grid-column: 2; }
+    .main-col-home-pg:first-child { grid-column: 2; }
 
     .main-section-hero > * { grid-column: 2 / span 2; }
 
-    .main-section-home > * { grid-column: span 1; }
+    .main-section-home-pg > * { grid-column: span 1; }
 
     /* ------------- */
 
