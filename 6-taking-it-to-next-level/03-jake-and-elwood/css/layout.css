@@ -63,6 +63,11 @@ header { background: black; }
     grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
 }
 
+.col-home-pg {
+    margin-top: 1.25em;
+    text-align: center;
+}
+
 .footer-aside {
     grid-area: social;
     margin-bottom: 2em;
@@ -86,11 +91,6 @@ header { background: black; }
     width: 100vw;
 }
 
-.main-col-home-pg {
-    margin-top: 1.25em;
-    text-align: center;
-}
-
 .main-section-hero {
     background-image: url(../img/hero-bg.jpg);
     background-size: cover;
@@ -111,8 +111,8 @@ header { background: black; }
 
 @media (min-width: 600px) {
 
-    .main-aside,
-    .main-col-home-pg:first-child { grid-column: 2; }
+    .col-home-pg:first-child,
+    .main-aside { grid-column: 2; }
 
     .main-section-hero > * { grid-column: 2 / span 2; }
 
