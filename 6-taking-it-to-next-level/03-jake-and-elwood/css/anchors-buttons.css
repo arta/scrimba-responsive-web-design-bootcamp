@@ -19,21 +19,8 @@
 /* BUTTONS */
 /* ------- */
 
-.a-btn {
-    display: inline-block;
-    text-decoration: none;
-}
-
-.btn {
-    background: 0;
-    border: 0;
-    cursor: pointer;
-}
-
 .a-btn,
-.btn {
-    transition: transform 250ms;
-}
+.btn { transition: transform 250ms; }
 
 .a-btn:focus,
 .a-btn:hover,
@@ -43,6 +30,17 @@
     -webkit-transform-style: preserve-3d;
     -webkit-backface-visibility: hidden;
     transform: scale(1.06);
+}
+
+.a-btn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn {
+    background: 0;
+    border: 0;
+    cursor: pointer;
 }
 
 .btn--hero { justify-self: start; }
