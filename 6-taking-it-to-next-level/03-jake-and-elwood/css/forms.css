@@ -24,15 +24,15 @@ label {
 
 /* ----- */
 
-.form-contact { display: grid; }
-
-/* ------------- */
-
 .btn--submit {
     font-size: .875rem;
     padding: .75em 3em;
     margin-left: auto;
 }
+
+/* ------------- */
+
+.form-contact { display: grid; }
 
 /* ------------- */
 
