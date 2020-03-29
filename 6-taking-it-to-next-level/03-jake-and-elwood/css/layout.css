@@ -36,11 +36,11 @@ main { align-self: start; }
 /* ---------------------------------------------- */
 
 footer,
-.main-template,
+.body-main,
 .main-section-home-pg { padding: 4em 0; }
 
+.body-main > *,
 .header-container,
-.main-template > *,
 .main-section-hero > *,
 .main-section-home-pg > * { grid-column: 2 / -2; }
 
