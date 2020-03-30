@@ -58,7 +58,7 @@ header { background: black; }
 
 /* ------ */
 
-.base-grid {
+.gridfield {
     display: grid;
     grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
 }
@@ -124,7 +124,7 @@ header { background: black; }
 
     /* ------------- */
 
-    .base-grid {
+    .gridfield {
         grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(150px, 320px)) minmax(1em, 1fr);
         column-gap: 2em;
     }
