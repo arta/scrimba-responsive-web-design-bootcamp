@@ -55,10 +55,10 @@ h2,
 
 /* ---------- */
 
-.p-footer { margin-bottom: 4em; }
-
 .p-hero,
 .p-subtitle-main { font-size: 1.125rem; }
+
+.p-footer { margin-bottom: 4em; }
 
 .p-subtitle-main {
     font-weight: bolder;

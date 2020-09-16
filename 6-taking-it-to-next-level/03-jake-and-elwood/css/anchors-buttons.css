@@ -2,6 +2,11 @@
 /* ANCHORS */
 /* ------- */
 
+.a-logo-header {
+    background: #ffe600;
+    padding-top: 2em;
+}
+
 .a-social-footer {
     color: #000;
     font-size: 1.75rem;
@@ -9,11 +14,6 @@
 }
 
 .a-social-footer:hover { color: #777; }
-
-.a-logo-header {
-    background: #ffe600;
-    padding-top: 2em;
-}
 
 /* ####### */
 /* BUTTONS */

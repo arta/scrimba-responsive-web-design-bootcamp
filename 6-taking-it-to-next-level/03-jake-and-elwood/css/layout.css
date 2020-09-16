@@ -58,9 +58,18 @@ header { background: black; }
 
 /* ------ */
 
-.gridtracks {
-    display: grid;
-    grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
+.aside-footer {
+    grid-area: social;
+    margin-bottom: 2em;
+    white-space: nowrap;
+}
+
+.container-header {
+    /* align items center is a hack for Safari */
+    /* prevent small screen nav content */
+    /* vertical shifting out of the screen top */
+    align-items: center;
+    display: flex;
 }
 
 .col-home-pg {
@@ -68,15 +77,9 @@ header { background: black; }
     text-align: center;
 }
 
-.aside-footer {
-    grid-area: social;
-    margin-bottom: 2em;
-    white-space: nowrap;
-}
-
-.section-footer {
-    grid-area: main;
-    opacity: .4;
+.gridtracks {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
 }
 
 /* Make hero slide up under the header (with navigation) */
@@ -89,6 +92,11 @@ header { background: black; }
     /* if 100% width required, must be declared */
     /* most often required to match other block elements */
     width: 100vw;
+}
+
+.section-footer {
+    grid-area: main;
+    opacity: .4;
 }
 
 .section-hero {
@@ -111,8 +119,8 @@ header { background: black; }
 
 @media (min-width: 600px) {
 
-    .col-home-pg:first-child,
-    .aside-main { grid-column: 2; }
+    .aside-main,
+    .col-home-pg:first-child { grid-column: 2; }
 
     .section-hero > * { grid-column: 2 / span 2; }
 
@@ -124,23 +132,23 @@ header { background: black; }
 
     /* ------------- */
 
-    .gridtracks {
-        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(150px, 320px)) minmax(1em, 1fr);
-        column-gap: 2em;
-    }
-
     .aside-footer {
         align-self: center;
         margin-bottom: unset;
         text-align: right;
     }
 
-    .section-footer { text-align: left; }
-
     .aside-main { order: 1; }
 
-    .section-main { grid-column: 3 / -2; }
+    .gridtracks {
+        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(150px, 320px)) minmax(1em, 1fr);
+        column-gap: 2em;
+    }
+
+    .section-footer { text-align: left; }
 
     .section-hero { padding: 8em 0 6em; }
+
+    .section-main { grid-column: 3 / -2; }
 
 }

@@ -49,14 +49,6 @@
 
 /* ---------- */
 
-.container-header {
-    /* align items center is a hack for Safari */
-    /* prevent small screen nav content */
-    /* vertical shifting out of the screen top */
-    align-items: center;
-    display: flex;
-}
-
 .nav-header {
     background: black;
     /* left:value shifts this to right, off of the canvas */
