@@ -12,23 +12,23 @@ strong { font-weight: 700; }
 
 h1,
 h2,
-.main-subtitle-p { color: black; }
+.p-subtitle-main { color: black; }
 
 /* ---------- */
 
-.hero-h1 {
+.h1-hero {
     color: inherit;
     font-size: 1.5rem;
     line-height: 1.4;
 }
 
-.main-h1 {
+.h1-main {
     font-size: 3rem;
     margin-bottom: .8em;
     justify-self: center;
 }
 
-.main-h1::after {
+.h1-main::after {
     background: #ffe600;
     content: "";
     display: block;
@@ -38,9 +38,9 @@ h2,
     width: 100%;
 }
 
-.main-h2 { font-size: 1.125rem; }
+.h2-main { font-size: 1.125rem; }
 
-.main-h2::after {
+.h2-main::after {
     background: #ffe600;
     content: '';
     display: block;
@@ -48,19 +48,19 @@ h2,
     margin-top: 10px;
 }
 
-.main-h2--home-pg::after {
+.h2-main--home-pg::after {
     margin-left: auto;
     margin-right: auto;
 }
 
 /* ---------- */
 
-.footer-p { margin-bottom: 4em; }
+.p-footer { margin-bottom: 4em; }
 
-.hero-subtitle-p,
-.main-subtitle-p { font-size: 1.125rem; }
+.p-hero,
+.p-subtitle-main { font-size: 1.125rem; }
 
-.main-subtitle-p {
+.p-subtitle-main {
     font-weight: bolder;
     justify-self: center;
     margin-bottom: 3em;
@@ -75,7 +75,7 @@ h2,
 
 @media (min-width: 600px) {
 
-    .main-subtitle-p {
+    .p-subtitle-main {
         max-width: 640px;
         width: 80%;
     }

@@ -30,19 +30,19 @@ body {
 
 main { align-self: start; }
 
-/* deal with .header-home-pg absolute position */
-.main-home-pg { grid-row: 1 / span 2; }
+/* deal with .header--home-pg absolute position */
+.main--home-pg { grid-row: 1 / span 2; }
 
 /* ---------------------------------------------- */
 
 footer,
-.body-main,
-.main-section-home-pg { padding: 4em 0; }
+.main-body,
+.section-main--home-pg { padding: 4em 0; }
 
-.body-main > *,
-.header-container,
-.main-section-hero > *,
-.main-section-home-pg > * { grid-column: 2 / -2; }
+.main-body > *,
+.container-header,
+.section-hero > *,
+.section-main--home-pg > * { grid-column: 2 / -2; }
 
 /* ------ */
 
@@ -58,7 +58,7 @@ header { background: black; }
 
 /* ------ */
 
-.gridfield {
+.gridtracks {
     display: grid;
     grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
 }
@@ -68,20 +68,20 @@ header { background: black; }
     text-align: center;
 }
 
-.footer-aside {
+.aside-footer {
     grid-area: social;
     margin-bottom: 2em;
     white-space: nowrap;
 }
 
-.footer-section {
+.section-footer {
     grid-area: main;
     opacity: .4;
 }
 
 /* Make hero slide up under the header (with navigation) */
 /* just for the esthetic effect */
-.header-home-pg {
+.header--home-pg {
     background: transparent;
     position: absolute;
     /* absolute|fixed position removes block's default 100% width */
@@ -91,7 +91,7 @@ header { background: black; }
     width: 100vw;
 }
 
-.main-section-hero {
+.section-hero {
     background-image: url(../img/hero-bg.jpg);
     background-size: cover;
     background-position: bottom;
@@ -103,7 +103,7 @@ header { background: black; }
 
 @media (min-width: 400px) {
 
-    .main-section-hero > * { margin-right: 20%; }
+    .section-hero > * { margin-right: 20%; }
 
 }
 
@@ -112,11 +112,11 @@ header { background: black; }
 @media (min-width: 600px) {
 
     .col-home-pg:first-child,
-    .main-aside { grid-column: 2; }
+    .aside-main { grid-column: 2; }
 
-    .main-section-hero > * { grid-column: 2 / span 2; }
+    .section-hero > * { grid-column: 2 / span 2; }
 
-    .main-section-home-pg > * { grid-column: span 1; }
+    .section-main--home-pg > * { grid-column: span 1; }
 
     /* ------------- */
 
@@ -124,23 +124,23 @@ header { background: black; }
 
     /* ------------- */
 
-    .gridfield {
+    .gridtracks {
         grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(150px, 320px)) minmax(1em, 1fr);
         column-gap: 2em;
     }
 
-    .footer-aside {
+    .aside-footer {
         align-self: center;
         margin-bottom: unset;
         text-align: right;
     }
 
-    .footer-section { text-align: left; }
+    .section-footer { text-align: left; }
 
-    .main-aside { order: 1; }
+    .aside-main { order: 1; }
 
-    .main-section { grid-column: 3 / -2; }
+    .section-main { grid-column: 3 / -2; }
 
-    .main-section-hero { padding: 8em 0 6em; }
+    .section-hero { padding: 8em 0 6em; }
 
 }

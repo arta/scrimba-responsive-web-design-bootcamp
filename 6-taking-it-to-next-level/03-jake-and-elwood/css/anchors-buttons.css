@@ -2,15 +2,15 @@
 /* ANCHORS */
 /* ------- */
 
-.a-footer-social {
+.a-social-footer {
     color: #000;
     font-size: 1.75rem;
     margin: 0 .5em;
 }
 
-.a-footer-social:hover { color: #777; }
+.a-social-footer:hover { color: #777; }
 
-.a-header-logo {
+.a-logo-header {
     background: #ffe600;
     padding-top: 2em;
 }

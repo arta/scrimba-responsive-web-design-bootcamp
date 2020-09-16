@@ -2,15 +2,15 @@
 // prompt action
 // distinguish from a state (class) name
 
-const btnOpenHeaderNav = document.querySelector('.btn--open-header-nav');
-const btnCloseHeaderNav = document.querySelector('.btn--close-header-nav');
-const headerNav = document.querySelector('.header-nav');
+const btnOpenNavHeader = document.querySelector('.btn--open-nav-header')
+const btnCloseNavHeader = document.querySelector('.btn--close-nav-header')
+const navHeader = document.querySelector('.nav-header')
 
-btnOpenHeaderNav.addEventListener('click', () => {
-    headerNav.classList.add('header-nav--open');
-});
+btnOpenNavHeader.addEventListener('click', () =>
+    navHeader.classList.add('nav-header--open')
+)
 
-btnCloseHeaderNav.addEventListener('click', () => {
-    headerNav.classList.remove('header-nav--open');
-});
+btnCloseNavHeader.addEventListener('click', () =>
+    navHeader.classList.remove('nav-header--open')
+)
 
