@@ -1,10 +1,12 @@
-// Verb, if present, first to:
-// prompt action
-// distinguish from a state (class) name
+const get = elementID => document.querySelector(elementID)
 
-const btnOpenNavHeader = document.querySelector('.btn--open-nav-header')
-const btnCloseNavHeader = document.querySelector('.btn--close-nav-header')
-const navHeader = document.querySelector('.nav-header')
+// Verb, if present, first to:
+//  a) prompt action
+//  b) distinguish from a state (class) name
+
+const btnOpenNavHeader  = get('.btn--open-nav-header')
+const btnCloseNavHeader = get('.btn--close-nav-header')
+const navHeader         = get('.nav-header')
 
 btnOpenNavHeader.addEventListener('click', () =>
     navHeader.classList.add('nav-header--open')
