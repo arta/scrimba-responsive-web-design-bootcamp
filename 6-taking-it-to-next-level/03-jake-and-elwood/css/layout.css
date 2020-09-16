@@ -24,7 +24,10 @@ body {
 
 body {
     display: grid;
+    /* fr = fraction remaining */
     grid-template-rows: auto 1fr auto;
+    /* grid-template-rows: min-content 1fr min-content; */
+    /* grid-template-rows: min-content auto min-content; */
     min-height: 100vh;
 }
 
@@ -64,17 +67,17 @@ header { background: black; }
     white-space: nowrap;
 }
 
+.col-home-pg {
+    margin-top: 1.25em;
+    text-align: center;
+}
+
 .container-header {
     /* align items center is a hack for Safari */
     /* prevent small screen nav content */
     /* vertical shifting out of the screen top */
     align-items: center;
     display: flex;
-}
-
-.col-home-pg {
-    margin-top: 1.25em;
-    text-align: center;
 }
 
 .gridtracks {
